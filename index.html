@@ -49,6 +49,12 @@
         .fade-2 { animation: fadeUp 0.7s 0.1s ease both; }
         .fade-3 { animation: fadeUp 0.7s 0.2s ease both; }
         .fade-4 { animation: fadeUp 0.7s 0.3s ease both; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hero-bg-text { animation: none; }
+            .fade-1, .fade-2, .fade-3, .fade-4 { animation: none; opacity: 1; transform: none; }
+            .work-media { transition: none; }
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDDYG3WSD"></script>
     <script>
@@ -354,6 +360,10 @@
         } catch (e) {}
         setLang(lang);
     })();
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('video[autoplay]').forEach(v => { v.autoplay = false; v.pause(); });
+    }
 </script>
 
 <script src="assets/js/chat-widget.js" defer></script>
