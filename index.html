@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilla Maia — Senior Product Designer</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; font-size: 16px; }
+        @media (min-width: 768px) { html { font-size: 18px; } }
+        body { background: #0f0e0d; color: #f0ece6; }
+
+        .header-top:hover .header-name,
+        .header-top:hover .header-sub,
+        .header-top:hover .header-desc { color: #f0ece6; }
+
+        .work-info {
+            border-radius: 0 0 0.75rem 0.75rem;
+            box-shadow: inset 3px 0 0 transparent, inset -3px 0 0 transparent, inset 0 -3px 0 transparent;
+            transition: box-shadow 0.25s ease;
+        }
+        .work-item:hover .work-info {
+            box-shadow: inset 3px 0 0 #EF9F27, inset -3px 0 0 #EF9F27, inset 0 -3px 0 #EF9F27;
+        }
+        .work-item:hover .work-title { color: #FAC775; }
+        .work-media { transition: transform 0.5s ease; }
+        .work-item:hover .work-media { transform: scale(1.02); }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(-50%); }
+            50% { transform: translateY(calc(-50% - 20px)); }
+        }
+        .hero-bg-text { animation: float 8s ease-in-out infinite; }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-1 { animation: fadeUp 0.6s ease forwards; }
+        .fade-2 { animation: fadeUp 0.7s 0.1s ease both; }
+        .fade-3 { animation: fadeUp 0.7s 0.2s ease both; }
+        .fade-4 { animation: fadeUp 0.7s 0.3s ease both; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDDYG3WSD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0PDDYG3WSD');
+    </script>
+</head>
+
+<body class="font-sans min-h-screen overflow-x-hidden">
+
+<!-- HEADER TOP ROW -->
+<div class="header-top flex flex-col md:flex-row md:justify-between md:items-start gap-3 md:gap-0 px-4 md:px-16 pt-6 md:pt-8 pb-5 md:pb-6 bg-bg">
+    <div class="flex flex-col gap-1">
+        <a href="#" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
+        <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
+    </div>
+    <p class="header-desc font-sans text-sm text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specializing in complex B2B SaaS and developer-adjacent products. Work that moves metrics.</p>
+</div>
+
+
+<!-- STICKY NAV -->
+<nav class="flex justify-between items-center px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+    <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
+        <li><a href="#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+        <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+        <li><a href="#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
+        <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
+    </ul>
+    <div class="flex border border-muted overflow-hidden">
+        <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
+        <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-end px-4 md:px-16 pb-20 relative overflow-hidden" id="top">
+    <div class="hero-bg-text absolute top-1/2 -right-4 font-sans font-semibold text-primary/[0.022] leading-none select-none pointer-events-none -tracking-widest" style="font-size: clamp(14rem, 28vw, 26rem); transform: translateY(-50%);">7yr</div>
+    <h1 class="fade-1 font-sans font-light leading-tight mb-8 max-w-4xl" style="font-size: clamp(3.2rem, 6.5vw, 6rem); letter-spacing: -0.03em;" data-i18n="hero-headline">Design that ships.<br><em class="not-italic font-normal" style="color: #FAC775;">Systems that hold.</em></h1>
+    <p class="fade-2 font-sans font-light text-2xl text-secondary mb-12 max-w-xl" data-i18n="hero-sub-body">Strategy and UX grounded in user interviews and A/B experimentation. My prototypes live in production code — tested with real users, refined before release.</p>
+    <div class="fade-3 flex flex-wrap items-center gap-6 md:gap-8">
+        <a href="#work" class="font-mono text-xs font-medium tracking-widest uppercase no-underline px-6 py-2.5 border border-accent text-accent rounded-[4px] hover:bg-accent hover:text-bg transition-all" data-i18n="hero-cta">View Work →</a>
+        <a href="#contact" class="font-mono text-xs tracking-widest uppercase no-underline text-secondary hover:text-primary transition-colors" data-i18n="hero-contact">Get in touch</a>
+    </div>
+</section>
+
+<!-- WORK -->
+<section class="px-4 md:px-16 py-16 md:py-24" id="work">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <a href="navigation.html" class="work-item bg-bg2 block no-underline text-primary hover:bg-bg3 transition-colors relative overflow-hidden rounded-xl border border-white/[0.18] shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+            <div class="overflow-hidden">
+                <video class="w-full aspect-video object-cover bg-bg3 work-media" autoplay muted loop playsinline preload="metadata" poster="assets/img/Redesign_Navegacao_Full_Image_21x9.png" aria-label="Navigation Redesign preview">
+                    <source src="assets/img/animation-health.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="work-info relative p-5 md:p-6 border-t border-white/10 bg-bg3">
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="font-mono text-xs text-muted tracking-widest">01</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs1-tag1">IA / Systems</span>
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs1-tag2">Discovery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-title font-sans text-xl font-light tracking-tight transition-colors mb-2" style="letter-spacing: -0.02em;" data-i18n="cs1-title">Navigation Redesign</div>
+                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs1-desc">Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. Navigated rollout tension between existing and new users.</div>
+            </div>
+        </a>
+
+        <a href="retro-prep.html" class="work-item bg-bg2 block no-underline text-primary hover:bg-bg3 transition-colors relative overflow-hidden rounded-xl border border-white/[0.18] shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+            <div class="overflow-hidden">
+                <img class="w-full aspect-video object-cover bg-bg3 work-media" src="assets/img/Retro_Start_New_21x9.png" alt="Retrospective Prep Flow preview">
+            </div>
+            <div class="work-info relative p-5 md:p-6 border-t border-white/10 bg-bg3">
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="font-mono text-xs text-muted tracking-widest">02</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs2-tag1">Workflow</span>
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs2-tag2">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-title font-sans text-xl font-light tracking-tight transition-colors mb-2" style="letter-spacing: -0.02em;" data-i18n="cs2-title">Retrospective Prep Flow</div>
+                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs2-desc">Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution, and advocated for the deferred problem in subsequent cycles.</div>
+            </div>
+        </a>
+
+        <a href="signup.html" class="work-item bg-bg2 block no-underline text-primary hover:bg-bg3 transition-colors relative overflow-hidden rounded-xl border border-white/[0.18] shadow-[0_4px_24px_rgba(0,0,0,0.6)]">
+            <div class="overflow-hidden">
+                <img class="w-full aspect-video object-cover bg-bg3 work-media" src="assets/img/Signup_BgVariants_RetroBg_21x9.png" alt="Signup & Activation preview">
+            </div>
+            <div class="work-info relative p-5 md:p-6 border-t border-white/10 bg-bg3">
+                <div class="flex justify-between items-center mb-3">
+                    <div class="flex items-center gap-3 flex-wrap">
+                        <span class="font-mono text-xs text-muted tracking-widest">03</span>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs3-tag1">Growth</span>
+                            <span class="font-mono text-xs tracking-widest uppercase text-muted border border-divider px-2 py-1" data-i18n="cs3-tag2">Implementation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-title font-sans text-xl font-light tracking-tight transition-colors mb-2" style="letter-spacing: -0.02em;" data-i18n="cs3-title">Signup & Activation</div>
+                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs3-desc">Two consecutive iterations on top-of-funnel and M1 activation. +192% first retro completion, +49.6% signup conversion. Implemented directly in the production codebase.</div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="px-4 md:px-16 py-16 md:py-24 border-t border-white/10">
+    <h2 class="font-sans font-light text-primary mb-12" style="font-size: clamp(1.5rem, 2.5vw, 2rem); letter-spacing: -0.02em;" data-i18n="testimonials-headline">What people I've worked with say.</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="bg-bg py-8 px-10 flex flex-col">
+            <blockquote class="font-sans font-light text-xl text-accent-light italic leading-loose mb-6 flex-1" data-i18n="quote1-text">"[PLACEHOLDER — Robin's quote will go here. Likely something about Camilla's design process, shipping discipline, or specific impact at Echometer. Two to three sentences works best in this card layout.]"</blockquote>
+            <div class="border-t border-white/10 pt-4">
+                <div class="font-sans text-sm text-primary mb-1">Robin Roschlau</div>
+                <div class="font-mono text-xs tracking-widest uppercase text-muted" data-i18n="quote1-role">Co-founder & CTO, Echometer</div>
+            </div>
+        </div>
+
+        <div class="bg-bg py-8 px-10 flex flex-col">
+            <blockquote class="font-sans font-light text-xl text-accent-light italic leading-loose mb-6 flex-1" data-i18n="quote2-text">"Camilla redefined what 'good' means in terms of design on our team. She raised the bar for what can be delivered while making collaboration with developers smoother and more efficient."</blockquote>
+            <div class="border-t border-white/10 pt-4">
+                <div class="font-sans text-sm text-primary mb-1">Vinicius Lyra</div>
+                <div class="font-mono text-xs tracking-widest uppercase text-muted" data-i18n="quote2-role">Developer, Coopersystem</div>
+            </div>
+        </div>
+
+        <div class="bg-bg py-8 px-10 flex flex-col">
+            <blockquote class="font-sans font-light text-xl text-accent-light italic leading-loose mb-6 flex-1" data-i18n="quote3-text">"Working with Camilla is incredibly efficient. Iterations happen fast, she asks the right questions — about design, but also about scope and strategic direction — and her technical understanding makes collaboration with engineers significantly smoother."</blockquote>
+            <div class="border-t border-white/10 pt-4">
+                <div class="font-sans text-sm text-primary mb-1">Johannes Niermann</div>
+                <div class="font-mono text-xs tracking-widest uppercase text-muted" data-i18n="quote3-role">Co-founder & CTO, Snackz.ai</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI SECTION -->
+<section class="px-4 md:px-16 py-16 md:py-24 border-t border-white/10 bg-bg2">
+    <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24 items-start">
+        <div>
+            <p class="font-sans text-base italic mb-3 text-accent" data-i18n="ai-label">AI & Design Practice</p>
+            <h2 class="font-sans font-light text-primary" style="font-size: 2.75rem; letter-spacing: -0.025em;" data-i18n="ai-headline"><span class="font-normal">Code</span> as <span style="color: #FAC775;">source of truth</span>.<br>Figma as sketchbook.</h2>
+        </div>
+        <div>
+            <blockquote class="font-sans font-light text-accent mb-10" style="font-size: clamp(1.5rem, 1.7vw, 2.2rem); letter-spacing: -0.02em; font-style: italic; line-height: 1.35;" data-i18n="ai-quote">"Anything worth testing needs to be in the real product to get meaningful signal."</blockquote>
+            <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="ai-p1"></p>
+            <p class="font-sans font-light text-2xl text-secondary leading-loose mb-10" data-i18n="ai-p2"></p>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="px-4 md:px-16 py-16 md:py-24 border-t border-white/10 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24 items-start" id="about">
+    <div>
+        <h2 class="font-sans font-light leading-tight" style="font-size: 2.75rem; letter-spacing: -0.025em;" data-i18n="about-headline">Design<br>as a <em class="not-italic font-normal" style="color: #FAC775;">hypothesis,</em><br>not a deliverable.</h2>
+    </div>
+    <div>
+        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p1">Most teams treat design as a deliverable. I treat it as a hypothesis — tested in production code, not in a Figma file waiting for handoff.</p>
+        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p2">That changes everything around design. Research happens on real flows. Engineering inherits validated decisions, not assumptions to debug. The feedback loop closes inside the product.</p>
+        <div class="flex gap-6 mt-8">
+            <a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light hover:border-accent-light transition-colors" data-i18n="about-cv">Download CV</a>
+            <a href="https://linkedin.com/in/camillamaia" target="_blank" rel="noopener noreferrer" class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light hover:border-accent-light transition-colors">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10" id="contact">
+    <h2 class="font-sans font-light leading-tight mb-8" style="font-size: 2.25rem; letter-spacing: -0.025em;" data-i18n="contact-headline">Let's work<br><em class="not-italic font-normal" style="color: #FAC775;">together.</em></h2>
+    <a href="mailto:c.cav.maia@gmail.com" class="font-mono text-base text-accent no-underline border-b border-accent-dim pb-0.5 tracking-wide hover:text-accent-light transition-colors">c.cav.maia@gmail.com</a>
+</section>
+
+<footer class="px-4 md:px-16 py-6 md:py-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+    <p class="font-mono text-xs text-muted tracking-widest uppercase">Camilla Maia — 2026</p>
+    <p class="font-mono text-xs text-muted tracking-widest uppercase" data-i18n="footer-location">Münster, Germany</p>
+</footer>
+
+<script>
+    const translations = {
+        en: {
+            'header-sub': 'Senior Product Designer — Münster, DE',
+            'header-desc': 'Specializing in complex B2B SaaS and developer-adjacent products. Work that moves metrics.',
+            'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+            'hero-tag': 'Senior Product Designer',
+            'hero-headline': 'Design that ships.<br><em class="not-italic font-normal" style="color: #FAC775;">Systems that hold.</em>',
+            'hero-sub-body': 'Strategy and UX grounded in user interviews and A/B experimentation. My prototypes live in production code — tested with real users, refined before release.',
+            'hero-cta': 'View Work →', 'hero-contact': 'Get in touch',
+            'work-label': 'Selected Work',
+            'cs1-title': 'Navigation Redesign',
+            'cs1-desc': "Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. Navigated rollout tension between existing and new users.",
+            'cs2-title': 'Retrospective Prep Flow',
+            'cs2-desc': 'Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution, and advocated for the deferred problem in subsequent cycles.',
+            'cs3-title': 'Signup & Activation',
+            'cs3-desc': 'Two consecutive iterations on top-of-funnel and M1 activation. +192% first retro completion, +49.6% signup conversion. Implemented directly in the production codebase.',
+            'cs1-tag1': 'IA / Systems', 'cs1-tag2': 'Discovery',
+            'cs2-tag1': 'Workflow', 'cs2-tag2': 'Strategy',
+            'cs3-tag1': 'Growth', 'cs3-tag2': 'Implementation',
+            'testimonials-label': 'Testimonials',
+            'testimonials-headline': "What people I've worked with say.",
+            'quote1-text': '"[PLACEHOLDER — Robin\'s quote will go here. Likely something about Camilla\'s design process, shipping discipline, or specific impact at Echometer. Two to three sentences works best in this card layout.]"',
+            'quote1-role': 'Co-founder & CTO, Echometer',
+            'quote2-text': '"Working with Camilla redefined what \'good\' means in terms of design on our team. She raised the bar for what can be delivered while making collaboration with developers smoother and more efficient."',
+            'quote2-role': 'Developer, Coopersystem',
+            'quote3-text': '"Working with Camilla is incredibly efficient. Iterations happen fast, she asks the right questions — about design, but also about scope and strategic direction — and her technical understanding makes collaboration with engineers significantly smoother."',
+            'quote3-role': 'Co-founder & CTO, Snackz.ai',
+            'ai-label': 'AI & Design Practice',
+            'ai-headline': '<span class="font-normal">Code</span> as <span style="color: #FAC775;">source of truth</span>.<br>Figma as sketchbook.',
+            'ai-quote': '"Anything worth testing needs to be in the real product to get meaningful signal."',
+            'ai-p1': 'I changed how my team thinks about prototyping and validation. We were using Figma as the source of truth — but I found that decisions only became real when tested in the actual product. So I started using AI-assisted development to work directly in code: running user interviews on a branch, iterating the same day, then handing off a validated, working version to engineering for security review and backend work.',
+            'ai-p2': 'Figma became a sketching tool, not a deliverable. The signup A/B tests came out of that workflow — we got 99% statistical confidence because we were testing with real users in a real product, not a prototype.',
+            'ai-tool1-label': 'Research synthesis',
+            'ai-tool1-desc': 'AI-assisted pattern identification across user interviews — accelerating insight clustering and reducing time between research and decision.',
+            'ai-tool2-label': 'Design generation',
+            'ai-tool2-desc': 'Rapid iteration across structural and visual alternatives using AI-assisted generation before committing to a direction.',
+            'ai-tool3-label': 'Production prototyping',
+            'ai-tool3-desc': 'Working variants built directly in the codebase using Codex and ChatGPT — HTML, Tailwind, lightweight JS — tested with real users the same day.',
+            'about-label': 'About',
+            'about-headline': 'Design<br>as a <em class="not-italic font-normal" style="color: #FAC775;">hypothesis,</em><br>not a deliverable.',
+            'about-p1': 'Most teams treat design as a deliverable. I treat it as a hypothesis — tested in production code, not in a Figma file waiting for handoff.',
+            'about-p2': 'That changes everything around design. Research happens on real flows. Engineering inherits validated decisions, not assumptions to debug. The feedback loop closes inside the product.',
+            'about-cv': 'Download CV',
+            'contact-headline': "Let's work<br><em class=\"not-italic font-normal\" style=\"color: #FAC775;\">together.</em>",
+            'footer-location': 'Münster, Germany',
+        },
+        pt: {
+            'header-sub': 'Designer de Produto Sênior — Münster, DE',
+            'header-desc': 'Especializada em produtos B2B SaaS complexos e próximos de engenharia. Trabalho que move métricas.',
+            'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+            'hero-tag': 'Designer de Produto Sênior',
+            'hero-headline': 'Design que entrega.<br><em class="not-italic font-normal" style="color: #FAC775;">Sistemas que permanecem.</em>',
+            'hero-sub-body': 'Estratégia e UX fundamentadas em entrevistas com usuários e experimentação A/B. Meus protótipos vivem em código de produção — testados com usuários reais, refinados antes do lançamento.',
+            'hero-cta': 'Ver Projetos →', 'hero-contact': 'Entrar em contato',
+            'work-label': 'Projetos Selecionados',
+            'cs1-title': 'Redesign de Navegação',
+            'cs1-desc': 'Reestruturei a arquitetura de informação do produto após workshops de pesquisa revelarem um modelo mental equivocado dos usuários. Conduzi o rollout equilibrando necessidades de usuários existentes e novos.',
+            'cs2-title': 'Fluxo de Preparação de Retro',
+            'cs2-desc': 'Redesenhei o fluxo central de preparação de retrospectiva. Defini os limites de escopo com os fundadores, entreguei uma solução validada e defendi a continuidade do problema adiado nos ciclos seguintes.',
+            'cs3-title': 'Cadastro & Ativação',
+            'cs3-desc': 'Duas iterações consecutivas no topo do funil e na ativação M1. +192% na conclusão da primeira retro, +49,6% na conversão de cadastro. Implementado diretamente no codebase de produção.',
+            'cs1-tag1': 'Arq. Informação / Sistemas', 'cs1-tag2': 'Descoberta',
+            'cs2-tag1': 'Fluxo', 'cs2-tag2': 'Estratégia',
+            'cs3-tag1': 'Growth', 'cs3-tag2': 'Implementação',
+            'testimonials-label': 'Depoimentos',
+            'testimonials-headline': 'O que pessoas com quem trabalhei dizem.',
+            'quote1-text': '"[PLACEHOLDER — A citação do Robin virá aqui. Provavelmente sobre o processo de design da Camilla, disciplina de entrega ou impacto específico na Echometer. Duas a três frases funcionam melhor neste layout.]"',
+            'quote1-role': 'Co-fundador & CTO, Echometer',
+            'quote2-text': '"A Camilla redefiniu o que \'bom\' significa em termos de design no nosso time. Ela elevou o padrão do que pode ser entregue e, ao mesmo tempo, tornou a colaboração com desenvolvedores mais fluida e eficiente."',
+            'quote2-role': 'Desenvolvedor, Coopersystem',
+            'quote3-text': '"Trabalhar com a Camilla é incrivelmente eficiente. As iterações acontecem rápido, ela faz as perguntas certas — sobre design, mas também sobre escopo e direção estratégica — e seu entendimento técnico torna a colaboração com engenheiros significativamente mais fluida."',
+            'quote3-role': 'Co-fundador & CTO, Snackz.ai',
+            'ai-label': 'IA & Prática de Design',
+            'ai-headline': '<span class="font-normal">Código</span> como <span style="color: #FAC775;">fonte da verdade</span>.<br>Figma como rascunho.',
+            'ai-quote': '"Qualquer coisa que vale a pena testar precisa estar no produto real para gerar sinal significativo."',
+            'ai-p1': 'Mudei a forma como meu time pensa sobre prototipagem e validação. Usávamos o Figma como fonte da verdade — mas percebi que as decisões só se tornavam reais quando testadas no produto de fato. Então comecei a usar desenvolvimento assistido por IA para trabalhar diretamente em código: conduzindo entrevistas com usuários em uma branch, iterando no mesmo dia e entregando uma versão validada e funcional para a engenharia revisar segurança e trabalhar no backend.',
+            'ai-p2': 'O Figma virou uma ferramenta de rascunho, não um entregável. Os testes A/B do cadastro surgiram desse fluxo — chegamos a 99% de confiança estatística porque estávamos testando com usuários reais em um produto real, não em um protótipo.',
+            'ai-tool1-label': 'Síntese de pesquisa',
+            'ai-tool1-desc': 'Identificação de padrões assistida por IA em entrevistas com usuários — acelerando o agrupamento de insights e reduzindo o tempo entre pesquisa e decisão.',
+            'ai-tool2-label': 'Geração de design',
+            'ai-tool2-desc': 'Iteração rápida entre alternativas estruturais e visuais com geração assistida por IA antes de definir uma direção.',
+            'ai-tool3-label': 'Prototipagem em produção',
+            'ai-tool3-desc': 'Variantes funcionais construídas diretamente no codebase com Codex e ChatGPT — HTML, Tailwind, JS leve — testadas com usuários reais no mesmo dia.',
+            'about-label': 'Sobre',
+            'about-headline': 'Design<br>como uma <em class="not-italic font-normal" style="color: #FAC775;">hipótese,</em><br>não um entregável.',
+            'about-p1': 'A maioria dos times trata design como um entregável. Eu trato como uma hipótese — testada em código de produção, não em um arquivo Figma aguardando handoff.',
+            'about-p2': 'Isso muda tudo ao redor do design. A pesquisa acontece em fluxos reais. A engenharia herda decisões validadas, não suposições para debugar. O ciclo de feedback se fecha dentro do produto.',
+            'about-cv': 'Baixar CV',
+            'contact-headline': 'Vamos colaborar<br><em class="not-italic font-normal" style="color: #FAC775;">juntos.</em>',
+            'footer-location': 'Münster, Alemanha',
+        }
+    };
+
+    function setLang(lang) {
+        try { localStorage.setItem('siteLang', lang); } catch (e) {}
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            const isActive = btn.textContent.toLowerCase() === lang;
+            btn.classList.toggle('active', isActive);
+            btn.style.background = isActive ? '#EF9F27' : 'transparent';
+            btn.style.color = isActive ? '#0f0e0d' : '#c8c0b8';
+        });
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+        });
+        if (typeof window.chatWidgetSetLang === 'function') window.chatWidgetSetLang();
+    }
+
+    (function initLang() {
+        let lang = 'en';
+        try {
+            const stored = localStorage.getItem('siteLang');
+            if (stored === 'pt' || stored === 'en') lang = stored;
+        } catch (e) {}
+        setLang(lang);
+    })();
+</script>
+
+<script src="assets/js/chat-widget.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Porfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+  },
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup & Activation — Camilla Maia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="tailwind.config.js"></script>
+  <style>
+    html { scroll-behavior: smooth }
+    @media (min-width: 768px) { html { font-size: 18px; } }
+    body { background: #0f0e0d; color: #f0ece6; }
+    .header-top:hover .header-name,
+    .header-top:hover .header-sub,
+    .header-top:hover .header-desc { color: #f0ece6; }
+  </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDDYG3WSD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0PDDYG3WSD');
+</script>
+<body class="font-sans min-h-screen overflow-x-hidden">
+
+<!-- HEADER -->
+<div class="header-top flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:gap-0 px-4 md:px-16 pt-6 md:pt-8 pb-6 bg-bg">
+  <div class="flex flex-col gap-1">
+    <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
+    <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
+  </div>
+  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+</div>
+
+<nav class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0 px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+  <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
+    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
+    <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
+  </ul>
+  <div class="flex flex-wrap items-center gap-3 md:gap-6">
+    <a href="index.html#work" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
+    <div class="flex border border-muted overflow-hidden">
+      <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
+      <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="px-4 md:px-16 pt-12 md:pt-20 pb-12 md:pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 md:items-end border-t border-white/10">
+  <div>
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-6 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="hero-eyebrow">03 — Signup & Activation</span>
+    </div>
+    <h1 class="font-sans font-light leading-tight mb-6" style="font-size: clamp(3rem, 6vw, 5.5rem); letter-spacing: -0.03em;" data-i18n="hero-title">Signup &<br><em class="not-italic font-normal" style="color: #FAC775;">Activation</em></h1>
+    <p class="font-sans font-light text-xl text-secondary leading-loose max-w-md" data-i18n="hero-sub"></p>
+    <span class="font-mono text-sm text-muted">2025</span>
+  </div>
+  <div class="grid grid-cols-2 gap-px bg-white/10">
+    <div class="bg-bg2 p-4 gap-3 md:p-8 flex flex-col justify-end">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3.5rem); letter-spacing: -0.03em; color: #FAC775;">+192%</div>
+      <div class="font-mono text-lg font-light text-muted tracking-wide uppercase" data-i18n="hero-stat1"></div>
+    </div>
+    <div class="bg-bg2 p-4 gap-3 md:p-8 flex flex-col justify-end">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3.5rem); letter-spacing: -0.03em; color: #FAC775;">+49.6%</div>
+      <div class="font-mono text-lg font-light text-muted tracking-wide uppercase" data-i18n="hero-stat2"></div>
+    </div>
+    <div class="bg-bg2 p-4 gap-3 md:p-8 flex flex-col justify-end">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3.5rem); letter-spacing: -0.03em; color: #FAC775;">99%</div>
+      <div class="font-mono text-lg font-light text-muted tracking-wide uppercase" data-i18n="hero-stat3"></div>
+    </div>
+    <div class="bg-bg2 p-4 gap-3 md:p-8 flex flex-col justify-end">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3.5rem); letter-spacing: -0.03em; color: #FAC775;">3.5K</div>
+      <div class="font-mono text-lg font-light text-muted tracking-wide uppercase" data-i18n="hero-stat4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL WIDTH HERO -->
+<img class="w-full h-[25vh] md:h-[35vh] object-cover" src="assets/img/SignUp_Gates.png" alt="Echometer Sign up gates">
+
+<!-- INTRO -->
+<section class="px-4 md:px-16 py-12 md:py-20 grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24 border-t border-white/10">
+  <div>
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-6 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="overview-label">Overview</span>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-company-label">Company</div>
+        <div class="font-sans text-base text-primary">Echometer</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-timeline-label">Timeline</div>
+        <div class="font-sans text-base text-primary" data-i18n="info-timeline-value">2022 — 2024 (two iterations)</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-methods-label">Methods</div>
+        <div class="font-sans text-base text-primary" data-i18n="info-methods-value">A/B testing, PostHog funnels, user interviews, AI-assisted prototyping</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-credits-label">Credits</div>
+        <div class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="info-credits-value">End-to-end: Research, Strategy, Design, Implementation & Validation. Camilla Maia</div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p1"></p>
+    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p2"></p>
+    <p class="font-sans font-light text-xl text-secondary leading-loose" data-i18n="intro-p3"></p>
+  </div>
+</section>
+
+<!-- SECTION: ITERATION 1 -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10">
+  <div class="mb-8 md:mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="iter1-label">Iteration 01</span>
+    </div>
+    <h2 class="font-sans font-light text-primary max-w-2xl" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="iter1-headline"></h2>
+    <!-- PROBLEM DEFINITION + ITERATION CONNECTION -->
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="iter1-context"></p>
+  </div>
+  <img class="w-full h-auto md:h-[75vh] bg-bg3 border border-white/10 rounded-xl object-contain md:object-cover mb-6 md:mb-8" src="assets/img/Signup_BgVariants_PH.png" alt="Echometer Sign Ab Test Results">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 md:mb-10">
+    <img class="w-full h-[28vh] md:h-[32vh] bg-bg3 border border-white/10 rounded-xl object-cover" src="assets/img/Signup_Variants_Claim.png" alt="Echometer Sign up type 1">
+    <img class="w-full h-[28vh] md:h-[32vh] bg-bg3 border border-white/10 rounded-xl object-cover" src="assets/img/Signup_Variants_Metric.png" alt="Echometer Sign up type 2">
+    <img class="w-full h-[28vh] md:h-[32vh] bg-bg3 border border-white/10 rounded-xl object-cover" src="assets/img/Signup_Variants_Number.png" alt="Echometer Sign up type 3">
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3rem); letter-spacing: -0.03em; color: #FAC775;">+192%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter1-stat1">Carousel variant — winning result</div>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3rem); letter-spacing: -0.03em; color: #FAC775;">99.18%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter1-stat2">Statistical confidence — 1,974 participants</div>
+    </div>
+  </div>
+</section>
+
+<!-- AI PROTOTYPING CALLOUT -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10 bg-bg2">
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24 md:items-center">
+    <div>
+      <div class="font-mono text-xs tracking-widest uppercase text-accent mb-4 flex items-center gap-3">
+        <span class="inline-block w-8 h-px bg-accent"></span>
+        <span data-i18n="howbuilt-label">How it was built</span>
+      </div>
+      <h2 class="font-sans font-light text-primary mb-6" style="font-size: clamp(1.5rem, 2.5vw, 2rem); letter-spacing: -0.02em;" data-i18n="howbuilt-headline"></h2>
+      <p class="font-sans font-light text-xl text-secondary leading-loose mb-4" data-i18n="howbuilt-p1"></p>
+      <p class="font-sans font-light text-xl text-secondary leading-loose" data-i18n="howbuilt-p2"></p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <img class="w-full h-auto md:h-[30vh] bg-bg3 border border-white/10 rounded-xl object-contain md:object-cover" src="assets/img/SignUp_txt1.png" alt="Echometer Sign up type 1">
+      <img class="w-full h-auto md:h-[30vh] bg-bg3 border border-white/10 rounded-xl object-contain md:object-cover" src="assets/img/SignUp_txt2.png" alt="Echometer Sign up type 1">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: ITERATION 2 -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10">
+  <div class="mb-8 md:mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="iter2-label">Iteration 02</span>
+    </div>
+    <h2 class="font-sans font-light text-primary max-w-2xl" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="iter2-headline"></h2>
+    <!-- ITERATION CONNECTION + LEADERSHIP SIGNAL -->
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="iter2-context"></p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-10">
+    <img class="w-full h-auto md:h-[40vh] bg-bg3 border border-white/10 rounded-xl object-contain md:object-cover" src="assets/img/Signup_BgVariants_BoardBG.png" alt="Echometer Sign up type 1">
+    <img class="w-full h-auto md:h-[40vh] bg-bg3 border border-white/10 rounded-xl object-contain md:object-cover" src="assets/img/Signup_BgVariants_RetroBg.png" alt="Echometer Sign up type 1">
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3rem); letter-spacing: -0.03em; color: #FAC775;">+49.6%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter2-stat1">Signup conversion — winning variant</div>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(1.75rem, 5vw, 3rem); letter-spacing: -0.03em; color: #FAC775;">95.23%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter2-stat2">Statistical confidence — 3,500+ participants</div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT -->
+<a href="navigation.html" class="block px-4 md:px-16 py-12 md:py-20 border-t border-white/10 group hover:bg-bg2 transition-colors no-underline">
+  <div class="font-mono text-xs text-muted tracking-widest uppercase mb-4" data-i18n="next-label">Back to First</div>
+  <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+    <h2 class="font-sans font-light text-primary group-hover:text-accent-light transition-colors" style="font-size: clamp(1.75rem, 4vw, 3.5rem); letter-spacing: -0.03em;" data-i18n="next-title">Navigation Redesign</h2>
+    <span class="text-muted group-hover:text-accent transition-colors text-3xl self-end md:self-auto">↗</span>
+  </div>
+</a>
+
+<footer class="px-4 md:px-16 py-6 md:py-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+  <p class="font-mono text-xs text-muted tracking-widest uppercase">Camilla Maia — 2026</p>
+  <p class="font-mono text-xs text-muted tracking-widest uppercase" data-i18n="footer-location">Münster, Germany</p>
+</footer>
+
+<script>
+  const translations = {
+    en: {
+      'header-sub': 'Senior Product Designer — Münster, DE',
+      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
+      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'nav-back': '← All Work',
+      'hero-eyebrow': '03 — Signup & Activation',
+      'hero-title': 'Signup &<br><em class="not-italic font-normal" style="color: #FAC775;">Activation</em>',
+      'hero-sub': 'Two consecutive iterations on the top-of-funnel and M1 activation. Designed, tested, and implemented end-to-end — from research to production code.',
+      'hero-stat1': 'M1 activation — first retro',
+      'hero-stat2': 'Signup conversion rate',
+      'hero-stat3': 'Statistical confidence on M1',
+      'hero-stat4': 'Participants in signup A/B test',
+      'overview-label': 'Overview',
+      'info-company-label': 'Company',
+      'info-timeline-label': 'Timeline',
+      'info-timeline-value': '2022 — 2024 (two iterations)',
+      'info-methods-label': 'Methods',
+      'info-methods-value': 'A/B testing, PostHog funnels, user interviews, AI-assisted prototyping',
+      'info-credits-label': 'Credits',
+      'info-credits-value': 'End-to-end: Research, Strategy, Design, Implementation & Validation. Camilla Maia',
+      /* PROBLEM DEFINITION */
+      'intro-p1': 'The goal was clear: increase signups and get more users to their first retrospective. Both flows were underperforming and completely untested — no one had run a structured experiment on either of them.',
+      'intro-p2': 'What made this project different: I didn\'t just design the solutions — I <span class="text-primary">built them</span>. Using AI-assisted development, I prototyped directly in the production codebase, ran A/B tests with real users, and iterated between sessions before handing off to engineering for production hardening.',
+      'intro-p3': 'Two consecutive iterations, each informed by the previous — and each with statistically significant results.',
+      'iter1-label': 'Iteration 01',
+      'iter1-headline': 'M1 Activation — getting users to their first retro.',
+      /* ITERATION 1 CONTEXT: problem definition + what was tested */
+      'iter1-context': 'The hypothesis was simple: the copy and claims shown during signup were abstract and unmotivating — users had no reason to complete their first retrospective. I identified the value messaging as the variable worth testing and proposed three variants based on different framing approaches.',
+      'iter1-stat1': 'Carousel variant — winning result',
+      'iter1-stat2': 'Statistical confidence — 1,974 participants',
+      'howbuilt-label': 'How it was built',
+      'howbuilt-headline': 'Prototyped in production code. Tested with real users. Then handed off to engineering.',
+      'howbuilt-p1': 'Instead of Figma prototypes, I used AI-assisted development (Codex, ChatGPT) to build working variants directly in the codebase — HTML, Tailwind, lightweight JS. Each variant was tested with real users between sessions and iterated the same day.',
+      'howbuilt-p2': 'Engineering then reviewed the output, corrected implementation details, and pushed to production. This collapsed the design-engineering feedback loop entirely.',
+      'iter2-label': 'Iteration 02',
+      'iter2-headline': 'Signup conversion — getting more users through the door.',
+      /* ITERATION 2 CONTEXT: connection to iter1 + competitive research + leadership signal */
+      'iter2-context': 'The +192% M1 result was larger than anyone expected from a copy change — it gave me the momentum and credibility to propose a second iteration. Still not satisfied with the overall numbers, I ran a competitive landscape study observing how tools we admired — particularly PostHog — display value during signup. I proposed the change independently. The +49.6% conversion improvement surprised the team.',
+      'iter2-stat1': 'Signup conversion — winning variant',
+      'iter2-stat2': 'Statistical confidence — 3,500+ participants',
+      'next-label': 'Back to First',
+      'next-title': 'Navigation Redesign',
+      'footer-location': 'Münster, Germany',
+    },
+    pt: {
+      'header-sub': 'Designer de Produto Sênior — Münster, DE',
+      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
+      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'nav-back': '← Todos os Projetos',
+      'hero-eyebrow': '03 — Cadastro & Ativação',
+      'hero-title': 'Cadastro &<br><em class="not-italic font-normal" style="color: #FAC775;">Ativação</em>',
+      'hero-sub': 'Duas iterações consecutivas no topo do funil e na ativação M1. Desenhado, testado e implementado de ponta a ponta — da pesquisa ao código de produção.',
+      'hero-stat1': 'Ativação M1 — conclusão da primeira retro',
+      'hero-stat2': 'Taxa de conversão no cadastro',
+      'hero-stat3': 'Confiança estatística no resultado M1',
+      'hero-stat4': 'Participantes no teste A/B do cadastro',
+      'overview-label': 'Visão Geral',
+      'info-company-label': 'Empresa',
+      'info-timeline-label': 'Período',
+      'info-timeline-value': '2022 — 2024 (duas iterações)',
+      'info-methods-label': 'Métodos',
+      'info-methods-value': 'Testes A/B, funis no PostHog, entrevistas com usuários, prototipagem assistida por IA',
+      'info-credits-label': 'Créditos',
+      'info-credits-value': 'Ponta a ponta: Pesquisa, Estratégia, Design, Implementação & Validação. Camilla Maia',
+      'intro-p1': 'O objetivo era claro: aumentar os cadastros e levar mais usuários à primeira retrospectiva. Ambos os fluxos estavam com desempenho abaixo do esperado e completamente sem testes — ninguém havia rodado um experimento estruturado em nenhum deles.',
+      'intro-p2': 'O que tornou este projeto diferente: não apenas desenhei as soluções — eu <span class="text-primary">as construí</span>. Usando desenvolvimento assistido por IA, prototipei diretamente no codebase de produção, rodei testes A/B com usuários reais e iterei entre sessões antes de entregar à engenharia para o hardening de produção.',
+      'intro-p3': 'Duas iterações consecutivas, cada uma informada pela anterior — e cada uma com resultados estatisticamente significativos.',
+      'iter1-label': 'Iteração 01',
+      'iter1-headline': 'Ativação M1 — levar os usuários à primeira retro.',
+      'iter1-context': 'A hipótese era simples: o copy e as afirmações exibidas durante o cadastro eram abstratos e desmotivadores — os usuários não tinham razão para completar a primeira retrospectiva. Identifiquei o value messaging como a variável a ser testada e propus três variantes baseadas em abordagens de enquadramento diferentes.',
+      'iter1-stat1': 'Variante carrossel — resultado vencedor',
+      'iter1-stat2': 'Confiança estatística — 1.974 participantes',
+      'howbuilt-label': 'Como foi construído',
+      'howbuilt-headline': 'Prototipado em código de produção. Testado com usuários reais. Depois entregue à engenharia.',
+      'howbuilt-p1': 'Em vez de protótipos no Figma, usei desenvolvimento assistido por IA (Codex, ChatGPT) para construir variantes funcionais diretamente no codebase — HTML, Tailwind, JS leve. Cada variante foi testada com usuários reais entre sessões e iterada no mesmo dia.',
+      'howbuilt-p2': 'A engenharia então revisava o output, corrigia detalhes de implementação e subia para produção. Isso encurtou completamente o ciclo de feedback entre design e engenharia.',
+      'iter2-label': 'Iteração 02',
+      'iter2-headline': 'Conversão no cadastro — trazer mais usuários para dentro.',
+      'iter2-context': 'O resultado de +192% na ativação M1 foi maior do que qualquer um esperava de uma mudança de copy — isso me deu o momentum e a credibilidade para propor uma segunda iteração. Ainda insatisfeita com os números gerais, conduzi um estudo de landscape competitivo observando como ferramentas que admiramos — especialmente o PostHog — exibem valor durante o cadastro. Propus a mudança de forma independente. A melhoria de +49.6% na conversão surpreendeu o time.',
+      'iter2-stat1': 'Conversão no cadastro — variante vencedora',
+      'iter2-stat2': 'Confiança estatística — 3.500+ participantes',
+      'next-label': 'Voltar ao Primeiro',
+      'next-title': 'Redesign de Navegação',
+      'footer-location': 'Münster, Alemanha',
+    }
+  };
+
+  function setLang(lang) {
+    try { localStorage.setItem('siteLang', lang); } catch (e) {}
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      const isActive = btn.textContent.toLowerCase() === lang;
+      btn.classList.toggle('active', isActive);
+      btn.style.background = isActive ? '#EF9F27' : 'transparent';
+      btn.style.color = isActive ? '#0f0e0d' : '#c8c0b8';
+    });
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+    });
+    if (typeof window.chatWidgetSetLang === 'function') window.chatWidgetSetLang();
+  }
+
+  (function initLang() {
+    let lang = 'en';
+    try {
+      const stored = localStorage.getItem('siteLang');
+      if (stored === 'pt' || stored === 'en') lang = stored;
+    } catch (e) {}
+    setLang(lang);
+  })();
+</script>
+
+<script src="assets/js/chat-widget.js" defer></script>
+
+</body>
+</html>

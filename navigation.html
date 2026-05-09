@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Redesign — Camilla Maia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="tailwind.config.js"></script>
+  <style>
+    html { scroll-behavior: smooth }
+    @media (min-width: 768px) { html { font-size: 18px; } }
+    body { background: #0f0e0d; color: #f0ece6; }
+    .header-top:hover .header-name,
+    .header-top:hover .header-sub,
+    .header-top:hover .header-desc { color: #f0ece6; }
+  </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDDYG3WSD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0PDDYG3WSD');
+</script>
+<body class="font-sans min-h-screen overflow-x-hidden">
+
+<!-- HEADER -->
+<div class="header-top flex flex-col md:flex-row md:justify-between md:items-start gap-3 md:gap-0 px-4 md:px-16 pt-6 md:pt-8 pb-5 md:pb-6 bg-bg">
+  <div class="flex flex-col gap-1">
+    <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
+    <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
+  </div>
+  <p class="header-desc font-sans text-sm text-secondary leading-relaxed font-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+</div>
+
+<nav class="flex flex-wrap justify-between items-center gap-3 px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+  <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
+    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
+    <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
+  </ul>
+  <div class="flex flex-wrap items-center gap-3 md:gap-6">
+    <a href="index.html#work" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
+    <div class="flex border border-muted overflow-hidden">
+      <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
+      <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="px-4 md:px-16 pt-12 md:pt-20 pb-8 md:pb-12">
+  <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-3 md:gap-0 mb-8 md:mb-12">
+    <h1 class="font-sans font-light leading-tight" style="font-size: clamp(3rem, 6vw, 5.5rem); letter-spacing: -0.03em;" data-i18n="hero-title">Navigation<br><em class="not-italic font-normal" style="color: #FAC775;">Redesign</em></h1>
+    <span class="font-mono text-sm text-muted">2026</span>
+  </div>
+  <img class="w-full rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Full Image.png" alt="Main Navigation in Echometer">
+</section>
+
+<!-- INTRO -->
+<section class="px-4 md:px-16 py-12 md:py-20
+ grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24">
+  <div>
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-6 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="overview-label">Overview</span>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-company-label">Company</div>
+        <div class="font-sans text-base text-primary">Echometer</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-year-label">Year</div>
+        <div class="font-sans text-base text-primary">2026</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-methods-label">Methods</div>
+        <div class="font-sans text-base text-primary" data-i18n="info-methods-value">User workshops, IA redesign, AI-assisted synthesis, A/B testing</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-credits-label">Credits</div>
+        <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value">Research, Strategy, Design & Validation. Camilla Maia</div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center">
+    <!-- SENIOR SIGNAL 4: Problem definition added to intro-p1 -->
+    <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="intro-p1">Low adoption on several key features. The initial brief pointed to sidebar clutter — but I reframed it as a mental model failure after running my own discovery. The real problem ran deeper: users had a fundamentally broken understanding of the product itself.</p>
+    <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="intro-p2">Through a series of user workshops, I discovered that most users thought the survey feature only worked inside retrospectives. The product has two core modules — <span class="text-primary">Teams (with Retros and Surveys)</span> and <span class="text-primary">1:1s</span> — but users experienced it as one undifferentiated blob.</p>
+    <p class="font-sans font-light text-2xl text-secondary leading-loose" data-i18n="intro-p3">This insight directly shaped the IA decision: migrate from a feature-centric sidebar to an entity-centric navigation that mirrors how users actually think about their work.</p>
+  </div>
+</section>
+
+<!-- SECTION: DISCOVERY -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10">
+  <div class="mb-8">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="discovery-label">Discovery</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="discovery-headline">The mental model was broken at the root.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="discovery-ai-note">Two methods over 2 sprints. Focused interview sessions identified patterns; AI handled transcription, freeing time for clustering. 10+ user shadowings grounded those patterns in observed behavior.</p>
+    <p class="font-sans text-base text-secondary leading-loose mt-6" data-i18n="discovery-clusters">Three clusters of confusion surfaced. Users mixed Retros, 1:1s, and Team Health into one continuous workflow — they saw integrated usage, not standalone tools, and Team Health especially read as a supporting feature rather than a peer. As the product expanded, the IA had drifted into reflecting how the team had built it rather than how users used it — and the IA itself was teaching users the wrong mental model. Friction came from settings overload — too many controls and gates, with workspace configuration making access to retros harder and confusing. Role-based action availability (Member, Team Admin, Workspace Admin) added a hidden axis of complexity that only surfaced when users hit a wall. Navigation was reinforcing a mental model that didn't match how the product was actually used.</p>
+  </div>
+  <div class="flex flex-col items-center gap-4 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 w-full">
+      <img class="bg-bg3 border border-white/10 h-[280px] md:h-[500px] w-full flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Workshop.png" alt="Workshop">
+      <img class="bg-bg3 border border-white/10 h-[280px] md:h-[300px] w-full flex rounded-xl object-contain p-2 self-center" src="assets/img/Redesign_Navegacao_Affinity.png" alt="Affinity diagram from 10+ user shadowings — dot count reflects how often each issue appeared">
+    </div>
+    <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Interviews.png" alt="Information Architecture Navigation">
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<section class="px-4 md:px-16 py-12 md:py-20 bg-bg2">
+  <blockquote class="font-sans font-light leading-snug max-w-4xl mx-auto text-center" style="font-size: clamp(1.75rem, 3vw, 2.75rem); letter-spacing: -0.02em; color: #FAC775; font-style: italic;" data-i18n="pullquote">"Users weren't just confused about where things were — they were confused about what the product was."</blockquote>
+  <p class="font-mono text-xs text-muted tracking-widest uppercase text-center mt-6" data-i18n="pullquote-caption">Discovery from user workshops</p>
+</section>
+
+<!-- SECTION: THE DECISION -->
+<section class="px-4 md:px-16 py-12 md:py-24">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="decision-label">The Key Decision</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="decision-headline">From feature-centric to entity-centric.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4" data-i18n="decision-description">I ran structured workshops with the engineering and product team to pressure-test the proposed IA. Senior leadership was initially skeptical — the workshop data shifted the decision, and we incorporated their feedback into the final implementation.</p>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-3" data-i18n="decision-ai-note">Navigation structure options were explored using AI-assisted design generation, allowing rapid iteration across structural alternatives before committing to a direction.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 mb-12">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xs text-muted tracking-widest uppercase mb-4" data-i18n="before-label">Before</div>
+      <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Old.png" alt="Old Navigation">
+      <p class="font-sans text-base text-secondary leading-relaxed" data-i18n="before-p">Retros · 1:1s · Settings all at the same level. No clear hierarchy. Users had to learn the product's internal logic to navigate it.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xs text-accent tracking-widest uppercase mb-4" data-i18n="after-label">After</div>
+      <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_New.png" alt="New Navigation">
+      <p class="font-sans text-base text-secondary leading-relaxed" data-i18n="after-p">Teams (containing Retros + Surveys) and 1:1s as top-level anchors. Workspace settings deprioritized. Navigation mirrors users' mental model.</p>
+    </div>
+  </div>
+  <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_SubNav.png" alt="Sub Navigation">
+</section>
+
+<!-- SECTION: THE HARD CALL -->
+<section class="px-4 md:px-16 py-12 md:py-20">
+  <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-24">
+    <div>
+      <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+        <span class="inline-block w-8 h-px bg-accent"></span>
+        <span data-i18n="hardcall-label">The Hard Call</span>
+      </div>
+      <h2 class="font-sans font-light text-primary mb-6" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="hardcall-headline">Existing users vs. new users.</h2>
+      <p class="font-sans text-xl font-light text-secondary leading-relaxed mb-4" data-i18n="hardcall-p1">When rollout began, a small group of existing users pushed back. Sales escalated the complaints. But the data supported the new structure for the majority — especially for PLG acquisition.</p>
+      <p class="font-sans text-xl font-light text-secondary leading-relaxed" data-i18n="hardcall-p2">Rather than compromise the IA, I designed a transition path: existing users could optionally use the old layout during a migration window. The structural decision held.</p>
+    </div>
+    <div class="flex flex-col gap-4 justify-center">
+      <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Rollout.png" alt="Navigation rollout">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: INSIGHTS -->
+<section class="px-4 md:px-16 py-12 md:py-20">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="insights-label">Highlight Insights</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="insights-headline">Surfacing hidden products changed how users understood the platform</h2>
+    <!-- SENIOR SIGNAL 3: Business/strategic framing added here -->
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mb-2" data-i18n="insights-strategy">This was not just a navigation problem — it was a business hypothesis. Surfacing the team health feature at the top level was a deliberate bet: if users discovered it, we believed it would drive feature adoption and increase payment conversion.</p>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mb-4" data-i18n="insights-description">Echometer team health product had always taken a secondary level of priority compared to retros and 1:1s. This was fixed by taking the Workspace and Team Health Dashboard to the top level and presenting it on equal degree of importance.</p>
+  </div>
+  <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Insights.png" alt="Navigation rollout">
+</section>
+
+<!-- SECTION: OUTCOME -->
+<section class="px-4 md:px-16 py-12 md:py-20">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="outcome-label">Ongoing Rollout</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="outcome-headline">Positive Impacts and rolling out strategy</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 mb-12">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light text-accent-light mb-2" style="font-size: 2.5rem; letter-spacing: -0.03em;">&gt; 40 post-rollout interviews</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-2" data-i18n="stat1-label">Usability Test — qualitative</div>
+      <p class="font-sans text-lg text-secondary font-light  leading-relaxed mb-4" data-i18n="stat1-description">Early qualitative signals show users correctly differentiating between Retros, 1:1s, and Health Checks for the first time — the core mental model problem the redesign was built to solve. Quantitative outcomes are being tracked and will be added as data matures.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light text-accent-light mb-2" style="font-size: 2.5rem; letter-spacing: -0.03em;">Optional rollback period</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-2" data-i18n="stat2-label">Rollout strategy — existing user transition</div>
+      <p class="font-sans text-lg text-secondary font-light leading-relaxed mb-4" data-i18n="stat2-description">During interviews, I noted that existing users have a resistance to new mental models compared to the navigation that they have been used to. The decision was implementation with rollback option in the beginning.</p>
+    </div>
+  </div>
+
+  <!-- USER QUOTE -->
+  <div class="bg-bg2 p-6 md:p-10 max-w-4xl">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-6 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="user-quote-label">User feedback — post-rollout</span>
+    </div>
+    <blockquote class="font-sans font-light text-accent-light italic leading-relaxed mb-6" style="font-size: clamp(1.15rem, 2vw, 1.5rem); letter-spacing: -0.01em;" data-i18n="user-quote-text">"[PLACEHOLDER — A quote from a real user about the new navigation will go here. Two to four sentences works well at this scale. Likely about being able to find things, the mental model finally clicking, or how it changed their daily workflow with Echometer.]"</blockquote>
+    <div class="border-t border-white/10 pt-4">
+      <div class="font-sans text-sm text-primary mb-1" data-i18n="user-quote-name">[User name — or "Anonymized" if not consented]</div>
+      <div class="font-mono text-xs tracking-widest uppercase text-muted" data-i18n="user-quote-role">[Role, Company — e.g. "Scrum Master, B2B SaaS team"]</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: IMPLEMENTATION & HANDOFF (SENIOR SIGNALS 1 + 2) -->
+<section class="px-4 md:px-16 py-12 md:py-24">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="handoff-label">Implementation & Handoff</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="handoff-headline">Directing implementation, leaving reusable artifacts.</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xs text-accent tracking-widest uppercase mb-3" data-i18n="handoff-reviews-label">Design reviews</div>
+      <p class="font-sans text-xl font-light text-muted leading-relaxed" data-i18n="handoff-reviews-desc">I led dedicated design review sessions to align the implementing designer with the intended interaction model and quality bar — ensuring the structural decisions survived the handoff intact.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xs text-accent tracking-widest uppercase mb-3" data-i18n="handoff-template-label">Interview template</div>
+      <p class="font-sans text-xl font-light text-muted leading-relaxed" data-i18n="handoff-template-desc">Post-implementation, I created a structured interview template to evaluate navigation changes — now used as a reference for future rollouts across the product.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S STILL OPEN -->
+<section class="grid grid-cols-1 md:grid-cols-2 px-4 md:px-16 py-24 border-t border-white/10 bg-bg2">
+  <div class="max-w-2xl">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-4 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="open-label">Workspace Settings</span>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-sans font-light text-accent-light mb-2" style="font-size: 2.5rem; letter-spacing: -0.03em;" data-i18n="stat3-label">Compromise on feature visibility and prioritization of next steps</div>
+      <p class="font-sans text-xl text-secondary font-light leading-relaxed mb-4" data-i18n="stat3-description">The workspace settings were found to be harder to find, given extra clicks needed to reach it. Compromise had to be made favoring constant usage over first setup features. The next iteration will surface workspace settings contextually, reducing the click depth without reintroducing navigation clutter.</p>
+    </div>
+  </div>
+  <img class="flex rounded-xl object-cover" src="assets/img/Redesign_Navegacao_Workshop_0.png" alt="Navigation rollout">
+</section>
+
+<!-- NEXT CASE STUDY -->
+<a href="retro-prep.html" class="block px-4 md:px-16 py-12 md:py-20 border-t border-white/10 group hover:bg-bg2 transition-colors no-underline">
+  <div class="font-mono text-xs text-muted tracking-widest uppercase mb-4" data-i18n="next-label">Next Case Study</div>
+  <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+    <h2 class="font-sans font-light text-primary group-hover:text-accent-light transition-colors" style="font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -0.03em;" data-i18n="next-title">Retrospective Prep Flow</h2>
+    <span class="text-muted group-hover:text-accent transition-colors text-3xl">↗</span>
+  </div>
+</a>
+
+<footer class="px-4 md:px-16 py-6 md:py-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+  <p class="font-mono text-xs text-muted tracking-widest uppercase">Camilla Maia — 2026</p>
+  <p class="font-mono text-xs text-muted tracking-widest uppercase" data-i18n="footer-location">Münster, Germany</p>
+</footer>
+
+<script>
+  const translations = {
+    en: {
+      'header-sub': 'Senior Product Designer — Münster, DE',
+      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
+      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'nav-back': '← All Work',
+      'hero-title': 'Navigation<br><em class="not-italic font-normal" style="color: #FAC775;">Redesign</em>',
+      'overview-label': 'Overview',
+      'info-company-label': 'Company',
+      'info-year-label': 'Year',
+      'info-methods-label': 'Methods',
+      'info-methods-value': 'User workshops, IA redesign, AI-assisted synthesis, A/B testing',
+      'info-credits-label': 'Credits',
+      'info-credits-value': 'Research, Strategy, Design & Validation. Camilla Maia',
+      /* SENIOR SIGNAL 4: problem definition strengthened */
+      'intro-p1': 'Low adoption on several key features. The initial brief pointed to sidebar clutter — but I reframed it as a mental model failure after running my own discovery. The real problem ran deeper: users had a fundamentally broken understanding of the product itself.',
+      'intro-p2': 'Through a series of user workshops, I discovered that most users thought the survey feature only worked inside retrospectives. The product has two core modules — <span class="text-primary">Teams (with Retros and Surveys)</span> and <span class="text-primary">1:1s</span> — but users experienced it as one undifferentiated blob.',
+      'intro-p3': 'This insight directly shaped the IA decision: migrate from a feature-centric sidebar to an entity-centric navigation that mirrors how users actually think about their work.',
+      'discovery-label': 'Discovery',
+      'discovery-headline': 'The mental model was broken at the root.',
+      'discovery-ai-note': 'Two methods over 2 sprints. Focused interview sessions identified patterns; AI handled transcription, freeing time for clustering. 10+ user shadowings grounded those patterns in observed behavior.',
+      'discovery-clusters': 'Three clusters of confusion surfaced. Users mixed Retros, 1:1s, and Team Health into one continuous workflow — they saw integrated usage, not standalone tools, and Team Health especially read as a supporting feature rather than a peer. As the product expanded, the IA had drifted into reflecting how the team had built it rather than how users used it — and the IA itself was teaching users the wrong mental model. Friction came from settings overload — too many controls and gates, with workspace configuration making access to retros harder and confusing. Role-based action availability (Member, Team Admin, Workspace Admin) added a hidden axis of complexity that only surfaced when users hit a wall. Navigation was reinforcing a mental model that didn't match how the product was actually used.',
+      'pullquote': '"Users weren\'t just confused about where things were — they were confused about what the product was."',
+      'pullquote-caption': 'Discovery from user workshops',
+      'decision-label': 'The Key Decision',
+      'decision-headline': 'From feature-centric to entity-centric.',
+      'decision-description': 'I ran structured workshops with the engineering and product team to pressure-test the proposed IA. Senior leadership was initially skeptical — the workshop data shifted the decision, and we incorporated their feedback into the final implementation.',
+      'decision-ai-note': 'Navigation structure options were explored using AI-assisted design generation, allowing rapid iteration across structural alternatives before committing to a direction.',
+      'before-label': 'Before',
+      'before-p': "Retros · 1:1s · Settings all at the same level. No clear hierarchy. Users had to learn the product's internal logic to navigate it.",
+      'after-label': 'After',
+      'after-p': "Teams (containing Retros + Surveys) and 1:1s as top-level anchors. Workspace settings deprioritized. Navigation mirrors users' mental model.",
+      'hardcall-label': 'The Hard Call',
+      'hardcall-headline': 'Existing users vs. new users.',
+      'hardcall-p1': 'When rollout began, a small group of existing users pushed back. Sales escalated the complaints. But the data supported the new structure for the majority — especially for PLG acquisition.',
+      'hardcall-p2': 'Rather than compromise the IA, I designed a transition path: existing users could optionally use the old layout during a migration window. The structural decision held.',
+      'insights-label': 'Highlight Insights',
+      'insights-headline': 'Surfacing hidden products changed how users understood the platform',
+      /* SENIOR SIGNAL 3: business hypothesis added */
+      'insights-strategy': 'This was not just a navigation problem — it was a business hypothesis. Surfacing the team health feature at the top level was a deliberate bet: if users discovered it, we believed it would drive feature adoption and increase payment conversion.',
+      'insights-description': 'Echometer team health product had always taken a secondary level of priority compared to retros and 1:1s. This was fixed by taking the Workspace and Team Health Dashboard to the top level and presenting it on equal degree of importance.',
+      'outcome-label': 'Ongoing Rollout',
+      'outcome-headline': 'Positive Impacts and rolling out strategy',
+      'stat1-label': 'Usability Test — qualitative',
+      'stat1-description': 'Early qualitative signals show users correctly differentiating between Retros, 1:1s, and Health Checks for the first time — the core mental model problem the redesign was built to solve. Quantitative outcomes are being tracked and will be added as data matures.',
+      'stat2-label': 'Rollout strategy — existing user transition',
+      'stat2-description': 'During interviews, I noted that existing users have a resistance to new mental models compared to the navigation that they have been used to. The decision was implementation with rollback option in the beginning.',
+      'user-quote-label': 'User feedback — post-rollout',
+      'user-quote-text': '"[PLACEHOLDER — A quote from a real user about the new navigation will go here. Two to four sentences works well at this scale. Likely about being able to find things, the mental model finally clicking, or how it changed their daily workflow with Echometer.]"',
+      'user-quote-name': '[User name — or "Anonymized" if not consented]',
+      'user-quote-role': '[Role, Company — e.g. "Scrum Master, B2B SaaS team"]',
+      /* SENIOR SIGNALS 1 + 2: new handoff section */
+      'handoff-label': 'Implementation & Handoff',
+      'handoff-headline': 'Directing implementation, leaving reusable artifacts.',
+      'handoff-reviews-label': 'Design reviews',
+      'handoff-reviews-desc': 'I led dedicated design review sessions to align the implementing designer with the intended interaction model and quality bar — ensuring the structural decisions survived the handoff intact.',
+      'handoff-template-label': 'Interview template',
+      'handoff-template-desc': 'Post-implementation, I created a structured interview template to evaluate navigation changes — now used as a reference for future rollouts across the product.',
+      'open-label': 'Workspace Settings',
+      'stat3-label': 'Compromise on feature visibility and prioritization of next steps',
+      'stat3-description': 'The workspace settings were found to be harder to find, given extra clicks needed to reach it. Compromise had to be made favoring constant usage over first setup features. The next iteration will surface workspace settings contextually, reducing the click depth without reintroducing navigation clutter.',
+      'next-label': 'Next Case Study',
+      'next-title': 'Retrospective Prep Flow',
+      'footer-location': 'Münster, Germany',
+    },
+    pt: {
+      'header-sub': 'Designer de Produto Sênior — Münster, DE',
+      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
+      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'nav-back': '← Todos os Projetos',
+      'hero-title': 'Redesign de<br><em class="not-italic font-normal" style="color: #FAC775;">Navegação</em>',
+      'overview-label': 'Visão Geral',
+      'info-company-label': 'Empresa',
+      'info-year-label': 'Ano',
+      'info-methods-label': 'Métodos',
+      'info-methods-value': 'Workshops com usuários, redesign de Arq. de Informação, síntese assistida por IA, testes A/B',
+      'info-credits-label': 'Créditos',
+      'info-credits-value': 'Pesquisa, Estratégia, Design & Validação. Camilla Maia',
+      /* SENIOR SIGNAL 4 PT */
+      'intro-p1': 'Baixa adoção em várias funcionalidades-chave. O briefing inicial apontava para excesso de opções na sidebar — mas redefini o problema como uma falha de modelo mental após conduzir minha própria descoberta. O problema real era mais profundo: os usuários tinham uma compreensão fundamentalmente quebrada do próprio produto.',
+      'intro-p2': 'Em uma série de workshops com usuários, descobri que a maioria achava que a funcionalidade de pesquisa só funcionava dentro das retrospectivas. O produto tem dois módulos centrais — <span class="text-primary">Times (com Retros e Pesquisas)</span> e <span class="text-primary">1:1s</span> — mas os usuários o experimentavam como um único bloco indiferenciado.',
+      'intro-p3': 'Essa descoberta moldou diretamente a decisão de arquitetura de informação: migrar de uma sidebar centrada em funcionalidades para uma navegação centrada em entidades que reflete como os usuários realmente pensam sobre o trabalho deles.',
+      'discovery-label': 'Descoberta',
+      'discovery-headline': 'O modelo mental estava quebrado na raiz.',
+      'discovery-ai-note': 'Dois métodos em 2 sprints. Sessões focadas de entrevista identificaram padrões; IA cuidou da transcrição, liberando tempo para a clusterização. Mais de 10 acompanhamentos com usuários ancoraram esses padrões em comportamento observado.',
+      'discovery-clusters': 'Três grupos de confusão emergiram. Os usuários misturavam Retros, 1:1s e Team Health em um fluxo contínuo — viam uso integrado, não ferramentas independentes, e o Team Health, especialmente, era percebido como uma feature de apoio em vez de um par. À medida que o produto cresceu, a IA havia se desviado para refletir como o time o construiu em vez de como os usuários o usavam — e a própria IA estava ensinando aos usuários o modelo mental errado. A fricção vinha do excesso de configurações — controles e barreiras demais, com a configuração de workspace tornando o acesso aos retros mais difícil e confuso. A disponibilidade de ações por papel (Member, Team Admin, Workspace Admin) adicionou um eixo oculto de complexidade que só aparecia quando os usuários batiam em uma parede. A navegação estava reforçando um modelo mental que não correspondia a como o produto era de fato usado.',
+      'pullquote': '"Os usuários não estavam apenas confusos sobre onde as coisas estavam — estavam confusos sobre o que era o produto."',
+      'pullquote-caption': 'Descoberta dos workshops com usuários',
+      'decision-label': 'A Decisão-Chave',
+      'decision-headline': 'De centrado em funcionalidades para centrado em entidades.',
+      'decision-description': 'Conduzi workshops estruturados com as equipes de engenharia e produto para testar a IA proposta. A liderança sênior estava inicialmente cética — os dados dos workshops mudaram a decisão, e incorporamos o feedback deles na implementação final.',
+      'decision-ai-note': 'As opções de arquitetura foram exploradas com geração de design assistida por IA, permitindo iteração rápida entre alternativas estruturais antes de definir uma direção.',
+      'before-label': 'Antes',
+      'before-p': 'Retros · 1:1s · Configurações, tudo no mesmo nível. Sem hierarquia clara. Os usuários precisavam aprender a lógica interna do produto para conseguir navegar.',
+      'after-label': 'Depois',
+      'after-p': 'Times (contendo Retros + Pesquisas) e 1:1s como âncoras de primeiro nível. Configurações de workspace despriorizadas. A navegação reflete o modelo mental dos usuários.',
+      'hardcall-label': 'A Decisão Difícil',
+      'hardcall-headline': 'Usuários existentes vs. novos usuários.',
+      'hardcall-p1': 'Quando o rollout começou, um pequeno grupo de usuários existentes resistiu. O time de vendas escalou as reclamações. Mas os dados sustentavam a nova estrutura para a maioria — especialmente para aquisição via PLG.',
+      'hardcall-p2': 'Em vez de comprometer a arquitetura de informação, desenhei um caminho de transição: usuários existentes podiam opcionalmente usar o layout antigo durante uma janela de migração. A decisão estrutural se manteve.',
+      'insights-label': 'Principais Descobertas',
+      'insights-headline': 'Tornar produtos ocultos visíveis mudou a forma como os usuários entendem a plataforma.',
+      /* SENIOR SIGNAL 3 PT */
+      'insights-strategy': 'Este não era apenas um problema de navegação — era uma hipótese de negócio. Destacar a funcionalidade de saúde do time no primeiro nível foi uma aposta deliberada: acreditávamos que, se os usuários a descobrissem, isso impulsionaria a adoção e aumentaria a conversão para planos pagos.',
+      'insights-description': 'O produto de medição da saúde do time havia sempre ocupado um papel secundário em relação às retrospectivas e 1:1s. Isso foi corrigido ao elevar o Workspace e o Dashboard de Saúde do Time para o primeiro nível de navegação, apresentando-os com o mesmo grau de importância.',
+      'outcome-label': 'Resultado',
+      'outcome-headline': 'Impactos positivos.',
+      'stat1-label': 'Teste de Usabilidade — qualitativo',
+      'stat1-description': 'Os primeiros sinais qualitativos mostram que os usuários estão conseguindo diferenciar corretamente Retros, 1:1s e Health Checks pela primeira vez — o problema central de modelo mental que o redesign foi criado para resolver. Os resultados quantitativos estão sendo monitorados e serão adicionados conforme os dados amadurecem.',
+      'stat2-label': 'Estrutura se manteve apesar da pressão dos stakeholders',
+      'stat2-description': 'Durante as entrevistas, observei que usuários existentes resistem a novos modelos mentais em comparação com a navegação a que já estão habituados. A decisão foi implementar com opção de rollback no lançamento.',
+      'user-quote-label': 'Feedback de usuário — pós-rollout',
+      'user-quote-text': '"[PLACEHOLDER — Uma citação de um usuário real sobre a nova navegação virá aqui. Duas a quatro frases funcionam bem nesta escala. Provavelmente sobre encontrar as coisas, o modelo mental finalmente clicar ou como mudou o fluxo diário no Echometer.]"',
+      'user-quote-name': '[Nome do usuário — ou "Anonimizado" se não consentido]',
+      'user-quote-role': '[Cargo, Empresa — ex.: "Scrum Master, time B2B SaaS"]',
+      /* SENIOR SIGNALS 1 + 2 PT */
+      'handoff-label': 'Implementação & Handoff',
+      'handoff-headline': 'Direcionando a implementação, deixando artefatos reutilizáveis.',
+      'handoff-reviews-label': 'Design reviews',
+      'handoff-reviews-desc': 'Conduzi sessões dedicadas de design review para alinhar a designer responsável pela implementação ao modelo de interação pretendido e ao padrão de qualidade esperado — garantindo que as decisões estruturais sobrevivessem ao handoff.',
+      'handoff-template-label': 'Template de entrevista',
+      'handoff-template-desc': 'Após a implementação, criei um template estruturado de entrevista para avaliar mudanças de navegação — agora utilizado como referência para futuros rollouts no produto.',
+      'open-label': 'Configurações do workspace',
+      'stat3-label': 'Comprometer visibilidade e priorização dos próximos passos',
+      'stat3-description': 'As configurações do workspace se mostraram mais difíceis de acessar, exigindo cliques adicionais. Foi preciso um compromisso, favorecendo o uso recorrente em detrimento das funcionalidades de configuração inicial. A próxima iteração vai expor as configurações do workspace de forma contextual, reduzindo a profundidade de cliques sem reintroduzir ruído na navegação.',
+      'next-label': 'Próximo Case',
+      'next-title': 'Fluxo de Preparação de Retro',
+      'footer-location': 'Münster, Alemanha',
+    }
+  };
+
+  function setLang(lang) {
+    try { localStorage.setItem('siteLang', lang); } catch (e) {}
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      const isActive = btn.textContent.toLowerCase() === lang;
+      btn.classList.toggle('active', isActive);
+      btn.style.background = isActive ? '#EF9F27' : 'transparent';
+      btn.style.color = isActive ? '#0f0e0d' : '#c8c0b8';
+    });
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+    });
+    if (typeof window.chatWidgetSetLang === 'function') window.chatWidgetSetLang();
+  }
+
+  (function initLang() {
+    let lang = 'en';
+    try {
+      const stored = localStorage.getItem('siteLang');
+      if (stored === 'pt' || stored === 'en') lang = stored;
+    } catch (e) {}
+    setLang(lang);
+  })();
+</script>
+
+<script src="assets/js/chat-widget.js" defer></script>
+
+</body>
+</html>

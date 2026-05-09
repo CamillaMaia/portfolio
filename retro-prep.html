@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retrospective Prep Flow — Camilla Maia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="tailwind.config.js"></script>
+  <style>
+    html { scroll-behavior: smooth }
+    @media (min-width: 768px) { html { font-size: 18px; } }
+    body { background: #0f0e0d; color: #f0ece6; }
+    .header-top:hover .header-name,
+    .header-top:hover .header-sub,
+    .header-top:hover .header-desc { color: #f0ece6; }
+  </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PDDYG3WSD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0PDDYG3WSD');
+</script>
+<body class="font-sans min-h-screen overflow-x-hidden">
+
+<!-- HEADER -->
+<div class="header-top flex flex-col md:flex-row md:justify-between md:items-start gap-3 md:gap-0 px-4 md:px-16 pt-6 md:pt-8 pb-5 md:pb-6 bg-bg">
+  <div class="flex flex-col gap-1">
+    <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
+    <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
+  </div>
+  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+</div>
+
+<nav class="flex flex-wrap justify-between items-center gap-3 px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
+  <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
+    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
+    <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
+  </ul>
+  <div class="flex flex-wrap items-center gap-3 md:gap-6">
+    <a href="index.html#work" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
+    <div class="flex border border-muted overflow-hidden">
+      <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
+      <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="px-4 md:px-16 pt-12 md:pt-24 pb-0">
+  <div class="flex flex-col md:flex-row gap-8 md:gap-40">
+    <div class="flex flex-col mb-8 md:mb-12">
+      <h1 class="font-sans font-light leading-tight" style="font-size: clamp(3rem, 6vw, 5.5rem); letter-spacing: -0.03em;" data-i18n="hero-title">Retrospective<br><em class="not-italic font-normal" style="color: #FAC775;">Prep Flow</em></h1>
+      <span class="font-mono text-sm text-muted">2022</span>
+      <div class="flex flex-col gap-4 mt-4">
+        <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p1">Users weren't converting to their first retrospective. Support tickets and user interviews pointed to the same problem: the preparation flow was cognitively overwhelming and structurally unclear.</p>
+        <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p2">I identified cognitive overload as the primary hypothesis. What made this project interesting was what we <span class="text-primary">chose not to fix</span> — and why that was the right call.</p>
+      </div>
+      <div class="mt-12 md:mt-20">
+        <div class="font-mono text-xs tracking-widest uppercase text-accent mb-6 flex items-center gap-3">
+          <span class="inline-block w-8 h-px bg-accent"></span>
+          <span data-i18n="overview-label">Overview</span>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-company-label">Company</div>
+            <div class="font-sans text-base text-primary">Echometer</div>
+          </div>
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-year-label">Year</div>
+            <div class="font-sans text-base text-primary">2022</div>
+          </div>
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-methods-label">Methods</div>
+            <div class="font-sans text-base text-primary" data-i18n="info-methods-value">User interviews, usability testing, support ticket analysis</div>
+          </div>
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-credits-label">Credits</div>
+            <div class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="info-credits-value">Research, Strategy, Design. Camilla Maia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="flex rounded-xl object-cover w-full md:w-auto max-h-[60vh] md:max-h-none" src="assets/img/Retro_Prep_All.png" alt="Retro preparation">
+  </div>
+</section>
+
+<!-- SECTION: THE PROBLEM -->
+<section class="px-4 md:px-16 py-12 md:py-24">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="problem-label">The Problem</span>
+    </div>
+    <h2 class="font-sans font-light text-primary max-w-2xl" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="problem-headline">The flow confused users before the retro even started.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="problem-reframe">I diagnosed the root cause as cognitive overload — the flow asked users to make abstract decisions with no mental model of what they were preparing for.</p>
+  </div>
+  <div class="flex flex-col md:flex-row gap-4">
+    <img class="flex rounded-xl object-cover w-full md:w-auto h-auto md:h-[80vh]" src="assets/img/Retro_Prep_Old.png" alt="Retro preparation">
+    <div class="flex flex-col gap-4">
+      <img class="flex rounded-xl object-cover w-full" src="assets/img/Retro_Prep_Feature_Request.png" alt="Retro preparation">
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: SYSTEMS INSIGHT -->
+<section class="px-4 md:px-16 py-12 md:py-24 border-t border-white/10">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="systems-label">The Systems Insight</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="systems-headline">The retro structure existed in three places. None of them matched.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="systems-description">The core problem wasn't just the prep flow in isolation — it was that Echometer's retro structure appeared in three different contexts across the product, with no visual or structural consistency between them. Making them consistent was the real fix.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10">
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xl font-light text-accent tracking-wide uppercase leading-relaxed mb-2" data-i18n="systems-instance1-label">PLG onboarding</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="systems-instance1-desc">Users encountered the retro structure for the first time during signup — but it looked and felt completely different from the tool itself.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xl font-light text-accent tracking-wide uppercase leading-relaxed mb-2" data-i18n="systems-instance2-label">Retro preparation</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="systems-instance2-desc">The prep flow presented steps in a different order and with different framing than the actual retro — creating a mental model mismatch before users even started.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-8">
+      <div class="font-mono text-xl font-light text-accent tracking-wide uppercase leading-relaxed mb-2" data-i18n="systems-instance3-label">Running retro</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="systems-instance3-desc">The in-session experience had its own visual logic. Users who completed prep arrived to a different-looking product than what they'd just prepared for.</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+    <img class="flex w-full h-auto md:h-[600px] object-contain md:object-cover rounded" src="assets/img/Retro_Prep_PLG.png" alt="Retro templates">
+    <img class="flex w-full h-auto md:h-[600px] object-contain md:object-cover rounded" src="assets/img/Retro_Prep_CheckIn.png" alt="Retro preparation checkin">
+    <img class="flex w-full object-contain md:object-cover rounded" src="assets/img/Retro_Prep_Survey.png" alt="Retro preparation survey">
+  </div>
+</section>
+
+<!-- SECTION: THE APPROACH -->
+<section class="px-4 md:px-16 py-12 md:py-24 border-t border-white/10">
+  <div class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-8 md:gap-24 items-start">
+    <div>
+      <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+        <span class="inline-block w-8 h-px bg-accent"></span>
+        <span data-i18n="approach-label">The Approach</span>
+      </div>
+      <h2 class="font-sans font-light text-primary mb-6" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="approach-headline">Mirror the prep experience to the retro itself.</h2>
+      <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="approach-p1">The core insight was that users had no mental model of what a retrospective would look like — so the prep felt abstract and unmotivating. The fix was to make the prep visually mirror what they'd see during the actual retro.</p>
+      <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="approach-p2">I merged steps, simplified the survey presentation, and reframed each step around the outcome it produced — not the action it required.</p>
+      <p class="font-sans font-light text-xl text-secondary leading-loose" data-i18n="approach-engineering">Rather than a traditional design handoff, I worked directly alongside the engineer during implementation — reviewing and iterating on UX and visual decisions in real time. This reduced back-and-forth and kept the final product close to the intended experience.</p>
+    </div>
+    <div class="flex flex-col gap-4 md:pt-16">
+      <img class="flex rounded-xl w-full h-auto md:h-[250px] object-contain md:object-cover" src="assets/img/Retro_Start.png" alt="Retro old start">
+      <img class="flex rounded-xl w-full h-auto md:h-[400px] object-contain md:object-cover" src="assets/img/Retro_Start_New.png" alt="Retro new start">
+    </div>
+  </div>
+</section>
+
+<!-- FULL WIDTH IMAGE -->
+<img class="flex object-cover w-full h-[250px] md:h-[400px]" src="assets/img/Retro_Prep_Templates.png" alt="Retro new start">
+
+<!-- SECTION: THE SCOPE DECISION -->
+<section class="px-4 md:px-16 py-24 border-t border-white/10 bg-bg2">
+  <div class="max-w-3xl mx-auto">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-4 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="scope-label">The Scope Decision</span>
+    </div>
+    <h2 class="font-sans font-light text-primary mb-6" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="scope-headline">Part of the problem was out of scope. I shipped anyway.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="scope-p1">The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.</p>
+    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="scope-p2">The founders aligned quickly — the priority was staying lean and shipping fast. We shipped the validated solution without the full fix.</p>
+    <p class="font-sans font-light text-xl text-secondary leading-loose" data-i18n="scope-p3">The deferred problem was documented, quantified, and advocated for in the next roadmap cycle. It eventually got built — which validated the original judgment call.</p>
+  </div>
+</section>
+
+<!-- SECTION: OUTCOME -->
+<section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10">
+  <div class="mb-10">
+    <div class="font-mono text-xs tracking-widest uppercase text-accent mb-2 flex items-center gap-3">
+      <span class="inline-block w-8 h-px bg-accent"></span>
+      <span data-i18n="outcome-label">Outcome</span>
+    </div>
+    <h2 class="font-sans font-light text-primary" style="font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.02em;" data-i18n="outcome-headline">Conversion moved. Even without the full fix.</h2>
+    <p class="font-sans font-light text-xl text-secondary leading-relaxed mt-4 md:w-2/3" data-i18n="outcome-context">M1 activation (first retro completed) was the target metric. We shipped with a clear hypothesis and validated it through qualitative signal — the survey adoption number confirmed the direction.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 mb-12">
+    <div class="bg-bg2 p-6 md:p-10">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.03em; color: #FAC775;">3% → 15%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-2" data-i18n="stat1-label">Retro survey adoption</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="stat1-description">The retro survey — a core feature of the user happy path — went from negligible usage (~3%) to 10–15% of all retros prepared weekly. The most direct signal that users were now engaging with the full retro structure.</p>
+    </div>
+    <div class="bg-bg2 p-6 md:p-10">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.03em; color: #FAC775;">M1 ↑</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-2" data-i18n="stat2-label">M1 activation — directional improvement</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="stat2-description">First retro completion improved directionally. We made a judgment call to ship without formal measurement infrastructure — the qualitative signal from user interviews supported the decision.</p>
+    </div>
+    <!-- FIX 4: reverted V1 → V2 back to Deferred → Shipped -->
+    <div class="bg-bg2 p-6 md:p-10">
+      <div class="font-sans font-light mb-2" style="font-size: clamp(2rem, 5vw, 4rem); letter-spacing: -0.03em; color: #FAC775;">Defer → Ship</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-2" data-i18n="stat3-label">Deferred scope — eventually shipped</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="stat3-description">The item selection model I flagged and deferred was eventually built in a later roadmap cycle — validating the original scope recommendation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT -->
+<a href="signup.html" class="block px-4 md:px-16 py-12 md:py-20 border-t border-white/10 group hover:bg-bg2 transition-colors no-underline">
+  <div class="font-mono text-xs text-muted tracking-widest uppercase mb-4" data-i18n="next-label">Next Case Study</div>
+  <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+    <h2 class="font-sans font-light text-primary group-hover:text-accent-light transition-colors" style="font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -0.03em;" data-i18n="next-title">Signup & Activation</h2>
+    <span class="text-muted group-hover:text-accent transition-colors text-3xl">↗</span>
+  </div>
+</a>
+
+<footer class="px-4 md:px-16 py-6 md:py-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
+  <p class="font-mono text-xs text-muted tracking-widest uppercase">Camilla Maia — 2026</p>
+  <p class="font-mono text-xs text-muted tracking-widest uppercase" data-i18n="footer-location">Münster, Germany</p>
+</footer>
+
+<script>
+  const translations = {
+    en: {
+      'header-sub': 'Senior Product Designer — Münster, DE',
+      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
+      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'nav-back': '← All Work',
+      'hero-title': 'Retrospective<br><em class="not-italic font-normal" style="color: #FAC775;">Prep Flow</em>',
+      'overview-label': 'Overview',
+      'info-company-label': 'Company',
+      'info-year-label': 'Year',
+      'info-methods-label': 'Methods',
+      'info-methods-value': 'User interviews, usability testing, support ticket analysis',
+      'info-credits-label': 'Credits',
+      'info-credits-value': 'Research, Strategy, Design. Camilla Maia',
+      'intro-p1': "Users weren't converting to their first retrospective. Support tickets and user interviews pointed to the same problem: the preparation flow was cognitively overwhelming and structurally unclear.",
+      /* FIX 1: TI → I */
+      'intro-p2': 'I identified cognitive overload as the primary hypothesis. What made this project interesting was what we <span class="text-primary">chose not to fix</span> — and why that was the right call.',
+      'problem-label': 'The Problem',
+      'problem-headline': 'The flow confused users before the retro even started.',
+      'problem-reframe': 'I diagnosed the root cause as cognitive overload — the flow asked users to make abstract decisions with no mental model of what they were preparing for.',
+      'systems-label': 'The Systems Insight',
+      'systems-headline': 'The retro structure existed in three places. None of them matched.',
+      'systems-description': 'The core problem wasn\'t just the prep flow in isolation — it was that Echometer\'s retro structure appeared in three different contexts across the product, with no visual or structural consistency between them. Making them consistent was the real fix.',
+      'systems-instance1-label': 'PLG onboarding',
+      'systems-instance1-desc': 'Users encountered the retro structure for the first time during signup — but it looked and felt completely different from the tool itself.',
+      'systems-instance2-label': 'Retro preparation',
+      'systems-instance2-desc': 'The prep flow presented steps in a different order and with different framing than the actual retro — creating a mental model mismatch before users even started.',
+      'systems-instance3-label': 'Running retro',
+      'systems-instance3-desc': 'The in-session experience had its own visual logic. Users who completed prep arrived to a different-looking product than what they\'d just prepared for.',
+      'approach-label': 'The Approach',
+      'approach-headline': 'Mirror the prep experience to the retro itself.',
+      'approach-p1': "The core insight was that users had no mental model of what a retrospective would look like — so the prep felt abstract and unmotivating. The fix was to make the prep visually mirror what they'd see during the actual retro.",
+      'approach-p2': 'I merged steps, simplified the survey presentation, and reframed each step around the outcome it produced — not the action it required.',
+      'approach-engineering': 'Rather than a traditional design handoff, I worked directly alongside the engineer during implementation — reviewing and iterating on UX and visual decisions in real time. This reduced back-and-forth and kept the final product close to the intended experience.',
+      'scope-label': 'The Scope Decision',
+      'scope-headline': 'Part of the problem was out of scope. I shipped anyway.',
+      'scope-p1': 'The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.',
+      'scope-p2': 'The founders aligned quickly — the priority was staying lean and shipping fast. We shipped the validated solution without the full fix.',
+      'scope-p3': 'The deferred problem was documented, quantified, and advocated for in the next roadmap cycle. It eventually got built — which validated the original judgment call.',
+      'outcome-label': 'Outcome',
+      'outcome-headline': 'Conversion moved. Even without the full fix.',
+      /* FIX 2: broken sentence fixed */
+      'outcome-context': 'M1 activation (first retro completed) was the target metric. We shipped with a clear hypothesis and validated it through qualitative signal — the survey adoption number confirmed the direction.',
+      'stat1-label': 'Retro survey adoption',
+      'stat1-description': 'The retro survey — a core feature of the user happy path — went from negligible usage (~3%) to 10–15% of all retros prepared weekly. The most direct signal that users were now engaging with the full retro structure.',
+      'stat2-label': 'M1 activation — directional improvement',
+      'stat2-description': 'First retro completion improved directionally. We made a judgment call to ship without formal measurement infrastructure — the qualitative signal from user interviews supported the decision.',
+      'stat3-label': 'Deferred scope — eventually shipped',
+      'stat3-description': 'The item selection model I flagged and deferred was eventually built in a later roadmap cycle — validating the original scope recommendation.',
+      'next-label': 'Next Case Study',
+      'next-title': 'Signup & Activation',
+      'footer-location': 'Münster, Germany',
+    },
+    pt: {
+      'header-sub': 'Designer de Produto Sênior — Münster, DE',
+      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
+      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'nav-back': '← Todos os Projetos',
+      'hero-title': 'Fluxo de<br><em class="not-italic font-normal" style="color: #FAC775;">Preparação de Retro</em>',
+      'overview-label': 'Visão Geral',
+      'info-company-label': 'Empresa',
+      'info-year-label': 'Ano',
+      'info-methods-label': 'Métodos',
+      'info-methods-value': 'Entrevistas com usuários, testes de usabilidade, análise de tickets de suporte',
+      'info-credits-label': 'Créditos',
+      'info-credits-value': 'Pesquisa, Estratégia, Design. Camilla Maia',
+      'intro-p1': 'Os usuários não estavam convertendo para a primeira retrospectiva deles. Tickets de suporte e entrevistas com usuários apontavam para o mesmo problema: o fluxo de preparação era cognitivamente sobrecarregado e estruturalmente confuso.',
+      'intro-p2': 'O time abraçou a tarefa em conjunto — mas identifiquei de forma independente a sobrecarga cognitiva como a hipótese principal. O que tornou este projeto interessante foi o que <span class="text-primary">escolhemos não resolver</span> — e por que essa foi a decisão certa.',
+      'problem-label': 'O Problema',
+      'problem-headline': 'O fluxo confundia os usuários antes mesmo da retro começar.',
+      /* FIX 3: PT problem-reframe cut to one sentence */
+      'problem-reframe': 'Diagnostiquei a causa raiz como sobrecarga cognitiva — o fluxo pedia que os usuários tomassem decisões abstratas sem nenhum modelo mental do que estavam preparando.',
+      'systems-label': 'O Insight Sistêmico',
+      'systems-headline': 'A estrutura da retro existia em três lugares. Nenhum deles combinava.',
+      'systems-description': 'O problema central não era apenas o fluxo de preparação de forma isolada — era que a estrutura de retro da Echometer aparecia em três contextos diferentes no produto, sem consistência visual ou estrutural entre eles. Torná-los consistentes foi a correção real.',
+      'systems-instance1-label': 'Onboarding PLG',
+      'systems-instance1-desc': 'Os usuários encontravam a estrutura da retro pela primeira vez durante o cadastro — mas ela tinha uma aparência e sensação completamente diferentes da ferramenta em si.',
+      'systems-instance2-label': 'Preparação de retro',
+      'systems-instance2-desc': 'O fluxo de preparação apresentava as etapas em uma ordem diferente e com um enquadramento diferente da retro real — criando um modelo mental incompatível antes mesmo de os usuários começarem.',
+      'systems-instance3-label': 'Retro em andamento',
+      'systems-instance3-desc': 'A experiência dentro da sessão tinha sua própria lógica visual. Usuários que completavam a preparação chegavam a um produto visualmente diferente do que haviam acabado de preparar.',
+      'approach-label': 'A Abordagem',
+      'approach-headline': 'Espelhar a experiência de preparação à retro em si.',
+      'approach-p1': 'O insight central era que os usuários não tinham um modelo mental de como seria uma retrospectiva — então a preparação parecia abstrata e desmotivadora. A solução foi fazer a preparação espelhar visualmente o que eles veriam durante a retro real.',
+      'approach-p2': 'Combinei etapas, simplifiquei a apresentação da pesquisa e reenquadrei cada passo em torno do resultado que ele produzia — não da ação que exigia.',
+      'approach-engineering': 'Em vez de um handoff tradicional, trabalhei diretamente ao lado do engenheiro durante a implementação — revisando e iterando decisões de UX e visuais em tempo real. Isso reduziu o vai-e-vem e manteve o produto final próximo à experiência pretendida.',
+      'scope-label': 'A Decisão de Escopo',
+      'scope-headline': 'Parte do problema estava fora do escopo. Entregamos mesmo assim.',
+      'scope-p1': 'O modelo de seleção de itens também contribuía para a confusão — mas mudá-lo teria adicionado escopo significativo e atrasado a correção do fluxo central. Identifiquei esse limite cedo e recomendei proativamente adiá-lo aos fundadores.',
+      'scope-p2': 'Os fundadores se alinharam rapidamente — a prioridade era manter o produto enxuto e entregar rápido. Entregamos a solução validada sem a correção completa.',
+      'scope-p3': 'O problema adiado foi documentado, quantificado e defendido no próximo ciclo de roadmap. Ele eventualmente foi construído — o que validou a decisão original de escopo.',
+      'outcome-label': 'Resultado',
+      'outcome-headline': 'A conversão subiu. Mesmo sem a correção completa.',
+      'outcome-context': 'A ativação M1 (primeira retro concluída) era a métrica-alvo. Entregamos com uma hipótese clara e a validamos por meio de sinal qualitativo — o número de adoção da pesquisa confirmou a direção.',
+      'stat1-label': 'Adoção da pesquisa de retro',
+      'stat1-description': 'A pesquisa de retro — funcionalidade central do happy path — saiu de um uso negligenciável (~3%) para 10–15% de todas as retros preparadas por semana. O sinal mais direto de que os usuários estavam engajando com a estrutura completa da retro.',
+      'stat2-label': 'Ativação M1 — melhoria direcional',
+      'stat2-description': 'A conclusão da primeira retro melhorou de forma direcional. Tomamos a decisão de entregar sem infraestrutura formal de medição — o sinal qualitativo das entrevistas com usuários sustentou a decisão.',
+      'stat3-label': 'Escopo adiado — eventualmente entregue',
+      'stat3-description': 'O modelo de seleção de itens que identifiquei e adiei foi eventualmente construído em um ciclo posterior do roadmap — validando a recomendação original de escopo.',
+      'next-label': 'Próximo Case',
+      'next-title': 'Cadastro & Ativação',
+      'footer-location': 'Münster, Alemanha',
+    }
+  };
+
+  function setLang(lang) {
+    try { localStorage.setItem('siteLang', lang); } catch (e) {}
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      const isActive = btn.textContent.toLowerCase() === lang;
+      btn.classList.toggle('active', isActive);
+      btn.style.background = isActive ? '#EF9F27' : 'transparent';
+      btn.style.color = isActive ? '#0f0e0d' : '#c8c0b8';
+    });
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key] !== undefined) el.innerHTML = translations[lang][key];
+    });
+    if (typeof window.chatWidgetSetLang === 'function') window.chatWidgetSetLang();
+  }
+
+  (function initLang() {
+    let lang = 'en';
+    try {
+      const stored = localStorage.getItem('siteLang');
+      if (stored === 'pt' || stored === 'en') lang = stored;
+    } catch (e) {}
+    setLang(lang);
+  })();
+</script>
+
+<script src="assets/js/chat-widget.js" defer></script>
+
+</body>
+</html>
