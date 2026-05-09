@@ -130,11 +130,13 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
     <div class="bg-bg2 p-6 md:p-8">
       <div class="font-sans font-light mb-2 text-fluid-stat-sm tracking-heading-md text-accent-light">+192%</div>
-      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter1-stat1">Carousel variant — winning result</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-3" data-i18n="iter1-stat1">Carousel variant — winning result</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="iter1-stat1-desc">M1 activation (first retro completed) moved from 1.49% baseline to 4.36% with the carousel variant. Tested over ~1 month with 1,974 participants via PostHog experiment.</p>
     </div>
     <div class="bg-bg2 p-6 md:p-8">
-      <div class="font-sans font-light mb-2 text-fluid-stat-sm tracking-heading-md text-accent-light">99.18%</div>
-      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter1-stat2">Statistical confidence — 1,974 participants</div>
+      <div class="font-sans font-light mb-2 text-fluid-stat-sm tracking-heading-md text-accent-light">99.14%</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-3" data-i18n="iter1-stat2">Statistical confidence — 1,974 participants</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="iter1-stat2-desc">Credible interval [+86.62%, +354.57%]. The carousel variant was declared winner — all other variants fell below the significance threshold.</p>
     </div>
   </div>
 </section>
@@ -170,11 +172,13 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10">
     <div class="bg-bg2 p-6 md:p-8">
       <div class="font-sans font-light mb-2 text-fluid-stat-sm tracking-heading-md text-accent-light">+49.6%</div>
-      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter2-stat1">Signup conversion — winning variant</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-3" data-i18n="iter2-stat1">Signup conversion — winning variant</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="iter2-stat1-desc">Signup completion rate improved +49.6% with the retro background variant. Tested over ~1 month with 3,500+ participants.</p>
     </div>
     <div class="bg-bg2 p-6 md:p-8">
       <div class="font-sans font-light mb-2 text-fluid-stat-sm tracking-heading-md text-accent-light">95.23%</div>
-      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed" data-i18n="iter2-stat2">Statistical confidence — 3,500+ participants</div>
+      <div class="font-mono text-xl font-light text-muted tracking-wide uppercase leading-relaxed mb-3" data-i18n="iter2-stat2">Statistical confidence — 3,500+ participants</div>
+      <p class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="iter2-stat2-desc">Result crossed the 95% threshold after ~1 month. Larger sample than Iteration 01 — the signup funnel had higher traffic volume than the M1 funnel.</p>
     </div>
   </div>
 </section>
@@ -224,7 +228,9 @@
       /* ITERATION 1 CONTEXT: problem definition + what was tested */
       'iter1-context': 'The hypothesis was simple: the copy and claims shown during signup were abstract and unmotivating — users had no reason to complete their first retrospective. I identified the value messaging as the variable worth testing and proposed three variants based on different framing approaches.',
       'iter1-stat1': 'Carousel variant — winning result',
+      'iter1-stat1-desc': 'M1 activation (first retro completed) moved from 1.49% baseline to 4.36% with the carousel variant. Tested over ~1 month with 1,974 participants via PostHog experiment.',
       'iter1-stat2': 'Statistical confidence — 1,974 participants',
+      'iter1-stat2-desc': 'Credible interval [+86.62%, +354.57%]. The carousel variant was declared winner — all other variants fell below the significance threshold.',
       'howbuilt-label': 'How it was built',
       'howbuilt-headline': 'Prototyped in production code. Tested with real users. Then handed off to engineering.',
       'howbuilt-p1': 'Instead of Figma prototypes, I used AI-assisted development (Codex, ChatGPT) to build working variants directly in the codebase — HTML, Tailwind, lightweight JS. Each variant was tested with real users between sessions and iterated the same day.',
@@ -234,7 +240,9 @@
       /* ITERATION 2 CONTEXT: connection to iter1 + competitive research + leadership signal */
       'iter2-context': 'The +192% M1 result was larger than anyone expected from a copy change — it gave me the momentum and credibility to propose a second iteration. Still not satisfied with the overall numbers, I ran a competitive landscape study observing how tools we admired — particularly PostHog — display value during signup. I proposed the change independently. The +49.6% conversion improvement surprised the team.',
       'iter2-stat1': 'Signup conversion — winning variant',
+      'iter2-stat1-desc': 'Signup completion rate improved +49.6% with the retro background variant. Tested over ~1 month with 3,500+ participants.',
       'iter2-stat2': 'Statistical confidence — 3,500+ participants',
+      'iter2-stat2-desc': 'Result crossed the 95% threshold after ~1 month. Larger sample than Iteration 01 — the signup funnel had higher traffic volume than the M1 funnel.',
       'next-label': 'Back to First',
       'next-title': 'Navigation Redesign',
       'footer-location': 'Münster, Germany',
@@ -266,7 +274,9 @@
       'iter1-headline': 'Ativação M1 — levar os usuários à primeira retro.',
       'iter1-context': 'A hipótese era simples: o copy e as afirmações exibidas durante o cadastro eram abstratos e desmotivadores — os usuários não tinham razão para completar a primeira retrospectiva. Identifiquei o value messaging como a variável a ser testada e propus três variantes baseadas em abordagens de enquadramento diferentes.',
       'iter1-stat1': 'Variante carrossel — resultado vencedor',
+      'iter1-stat1-desc': 'A ativação M1 (primeira retro concluída) subiu de 1,49% de base para 4,36% com a variante carrossel. Testado por ~1 mês com 1.974 participantes via experimento no PostHog.',
       'iter1-stat2': 'Confiança estatística — 1.974 participantes',
+      'iter1-stat2-desc': 'Intervalo de credibilidade [+86,62%, +354,57%]. A variante carrossel foi declarada vencedora — todas as outras ficaram abaixo do limiar de significância.',
       'howbuilt-label': 'Como foi construído',
       'howbuilt-headline': 'Prototipado em código de produção. Testado com usuários reais. Depois entregue à engenharia.',
       'howbuilt-p1': 'Em vez de protótipos no Figma, usei desenvolvimento assistido por IA (Codex, ChatGPT) para construir variantes funcionais diretamente no codebase — HTML, Tailwind, JS leve. Cada variante foi testada com usuários reais entre sessões e iterada no mesmo dia.',
@@ -275,7 +285,9 @@
       'iter2-headline': 'Conversão no cadastro — trazer mais usuários para dentro.',
       'iter2-context': 'O resultado de +192% na ativação M1 foi maior do que qualquer um esperava de uma mudança de copy — isso me deu o momentum e a credibilidade para propor uma segunda iteração. Ainda insatisfeita com os números gerais, conduzi um estudo de landscape competitivo observando como ferramentas que admiramos — especialmente o PostHog — exibem valor durante o cadastro. Propus a mudança de forma independente. A melhoria de +49.6% na conversão surpreendeu o time.',
       'iter2-stat1': 'Conversão no cadastro — variante vencedora',
+      'iter2-stat1-desc': 'A taxa de conclusão do cadastro melhorou +49,6% com a variante de fundo retro. Testado por ~1 mês com 3.500+ participantes.',
       'iter2-stat2': 'Confiança estatística — 3.500+ participantes',
+      'iter2-stat2-desc': 'Resultado cruzou o limiar de 95% após ~1 mês. Amostra maior que a Iteração 01 — o funil de cadastro tinha volume de tráfego maior que o funil M1.',
       'next-label': 'Voltar ao Primeiro',
       'next-title': 'Redesign de Navegação',
       'footer-location': 'Münster, Alemanha',
