@@ -33,18 +33,19 @@
     <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
     <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
   </div>
-  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.</p>
 </div>
 
 <nav class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0 px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
   <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
-    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
-    <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-home">Home</a></li>
+    <li><a href="work.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about-v2.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
     <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
     <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
   </ul>
   <div class="flex flex-wrap items-center gap-3 md:gap-6">
-    <a href="index.html#work" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
+    <a href="work.html" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
     <div class="flex border border-muted overflow-hidden">
       <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
       <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
@@ -101,8 +102,25 @@
         <div class="font-sans text-base text-primary" data-i18n="info-methods-value">A/B testing, PostHog funnels, user interviews, AI-assisted prototyping</div>
       </div>
       <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-team-label">Team</div>
+        <div class="font-sans text-base text-primary" data-i18n="info-team-value">Solo — Designer</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-constraints-label">Constraints</div>
+        <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-constraints-value">Input fields and their underlying logic were out of scope — could not be changed. All iterations worked within the existing form structure.</div>
+      </div>
+      <div>
+        <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-role-label">Role</div>
+        <div class="flex flex-wrap gap-1.5 mt-1">
+          <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Strategy</span>
+          <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Design</span>
+          <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Implementation</span>
+          <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Validation</span>
+        </div>
+      </div>
+      <div>
         <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-credits-label">Credits</div>
-        <div class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="info-credits-value">End-to-end: Research, Strategy, Design, Implementation & Validation. Camilla Maia</div>
+        <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value">Strategy, UI Design, Front-End. Camilla Maia</div>
       </div>
     </div>
   </div>
@@ -201,12 +219,12 @@
   const translations = {
     en: {
       'header-sub': 'Senior Product Designer — Münster, DE',
-      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
-      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'header-desc': 'Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.',
+      'nav-home': 'Home', 'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
       'nav-back': '← All Work',
       'hero-eyebrow': '03 — Signup & Activation',
       'hero-title': 'Signup &<br><em class="not-italic font-normal" style="color: #FAC775;">Activation</em>',
-      'hero-sub': 'Two consecutive iterations on the top-of-funnel and M1 activation. Designed, tested, and implemented end-to-end — from research to production code.',
+      'hero-sub': 'Two consecutive iterations on the top-of-funnel and M1 activation. Prototyped in the real codebase.',
       'hero-stat1': 'M1 activation — first retro',
       'hero-stat2': 'Signup conversion rate',
       'hero-stat3': 'Statistical confidence on M1',
@@ -215,10 +233,11 @@
       'info-company-label': 'Company',
       'info-timeline-label': 'Timeline',
       'info-timeline-value': '2022 — 2024 (two iterations)',
-      'info-methods-label': 'Methods',
-      'info-methods-value': 'A/B testing, PostHog funnels, user interviews, AI-assisted prototyping',
+      'info-methods-label': 'Methods', 'info-team-label': 'Team', 'info-constraints-label': 'Constraints',
+      'info-methods-value': 'A/B testing, PostHog funnels, user interviews, AI-assisted prototyping', 'info-team-value': 'Solo — Designer', 'info-constraints-value': 'Input fields and their underlying logic were out of scope — could not be changed. All iterations worked within the existing form structure.',
+      'info-role-label': 'Role',
       'info-credits-label': 'Credits',
-      'info-credits-value': 'End-to-end: Research, Strategy, Design, Implementation & Validation. Camilla Maia',
+      'info-credits-value': 'Strategy, UI Design, Front-End. Camilla Maia',
       /* PROBLEM DEFINITION */
       'intro-p1': 'The goal was clear: increase signups and get more users to their first retrospective. Both flows were underperforming and completely untested — no one had run a structured experiment on either of them.',
       'intro-p2': 'What made this project different: I didn\'t just design the solutions — I <span class="text-primary">built them</span>. Using AI-assisted development, I prototyped directly in the production codebase, ran A/B tests with real users, and iterated between sessions before handing off to engineering for production hardening.',
@@ -249,12 +268,12 @@
     },
     pt: {
       'header-sub': 'Designer de Produto Sênior — Münster, DE',
-      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
-      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'header-desc': 'Especializada em produtos B2B SaaS complexos e próximos de engenharia. Trabalho que move métricas.',
+      'nav-home': 'Início', 'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
       'nav-back': '← Todos os Projetos',
       'hero-eyebrow': '03 — Cadastro & Ativação',
       'hero-title': 'Cadastro &<br><em class="not-italic font-normal" style="color: #FAC775;">Ativação</em>',
-      'hero-sub': 'Duas iterações consecutivas no topo do funil e na ativação M1. Desenhado, testado e implementado de ponta a ponta — da pesquisa ao código de produção.',
+      'hero-sub': 'Duas iterações consecutivas no topo do funil e na ativação M1. Prototipado no codebase real.',
       'hero-stat1': 'Ativação M1 — conclusão da primeira retro',
       'hero-stat2': 'Taxa de conversão no cadastro',
       'hero-stat3': 'Confiança estatística no resultado M1',
@@ -263,10 +282,11 @@
       'info-company-label': 'Empresa',
       'info-timeline-label': 'Período',
       'info-timeline-value': '2022 — 2024 (duas iterações)',
-      'info-methods-label': 'Métodos',
-      'info-methods-value': 'Testes A/B, funis no PostHog, entrevistas com usuários, prototipagem assistida por IA',
+      'info-methods-label': 'Métodos', 'info-team-label': 'Time', 'info-constraints-label': 'Restrições',
+      'info-methods-value': 'Testes A/B, funis no PostHog, entrevistas com usuários, prototipagem assistida por IA', 'info-team-value': 'Solo — Designer', 'info-constraints-value': 'Os campos de entrada e sua lógica estavam fora do escopo — não podiam ser alterados. Todas as iterações trabalharam dentro da estrutura de formulário existente.',
+      'info-role-label': 'Função',
       'info-credits-label': 'Créditos',
-      'info-credits-value': 'Ponta a ponta: Pesquisa, Estratégia, Design, Implementação & Validação. Camilla Maia',
+      'info-credits-value': 'Estratégia, Design de UI, Front-End. Camilla Maia',
       'intro-p1': 'O objetivo era claro: aumentar os cadastros e levar mais usuários à primeira retrospectiva. Ambos os fluxos estavam com desempenho abaixo do esperado e completamente sem testes — ninguém havia rodado um experimento estruturado em nenhum deles.',
       'intro-p2': 'O que tornou este projeto diferente: não apenas desenhei as soluções — eu <span class="text-primary">as construí</span>. Usando desenvolvimento assistido por IA, prototipei diretamente no codebase de produção, rodei testes A/B com usuários reais e iterei entre sessões antes de entregar à engenharia para o hardening de produção.',
       'intro-p3': 'Duas iterações consecutivas, cada uma informada pela anterior — e cada uma com resultados estatisticamente significativos.',

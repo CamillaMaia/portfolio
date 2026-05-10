@@ -36,14 +36,15 @@
     <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
     <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
   </div>
-  <p class="header-desc font-sans text-sm text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+  <p class="header-desc font-sans text-sm text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.</p>
 </div>
 
 <!-- STICKY NAV -->
 <nav class="flex justify-between items-center px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
   <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
-    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
-    <li><a href="about.html" class="font-mono text-xs text-accent no-underline tracking-widest uppercase" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-home">Home</a></li>
+    <li><a href="work.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about-v2.html" class="font-mono text-xs text-accent no-underline tracking-widest uppercase" data-i18n="nav-about">About</a></li>
     <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
     <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
   </ul>
@@ -82,6 +83,20 @@
                 <a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light transition-colors" data-i18n="bio-cv">Download CV</a>
                 <a href="https://linkedin.com/in/camillamaia" target="_blank" class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light transition-colors">LinkedIn</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW I WORK -->
+<section class="px-4 md:px-16 py-16 md:py-24 border-t border-white/10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-8xl md:ml-auto">
+        <div>
+            <div class="section-label mb-6" data-i18n="how-label">How I work</div>
+            <p class="font-sans text-base text-secondary leading-loose mb-5" data-i18n="how-p1">I work in the codebase, not just in Figma. My workflow: identify the hypothesis, prototype it in code using AI tooling, test with real users on a branch the same day, then hand off to engineering for review and release.</p>
+            <p class="font-sans text-base text-secondary leading-loose" data-i18n="how-p2">693 commits in the last year — all to Echometer's private repository. Not to replace engineers, but because decisions only become real when you test them in the actual product.</p>
+        </div>
+        <div>
+            <img src="assets/img/github-contributions.png" alt="GitHub contribution graph — 693 contributions in the last year" class="w-full rounded-xl border border-white/10">
         </div>
     </div>
 </section>
@@ -185,8 +200,8 @@
   const translations = {
     en: {
       'header-sub': 'Senior Product Designer — Münster, DE',
-      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
-      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'header-desc': 'Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.',
+      'nav-home': 'Home', 'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
       'intro-headline': '<span class="text-muted">Camilla is a </span><span class="text-primary font-medium">product designer</span><span class="text-muted"> and </span><span style="color: #FAC775; font-style: italic;">UX researcher</span><span class="text-muted">&ensp;who turns complex systems into experiences people actually want to use — with 7 years of international experience.</span><span class="intro-flags">🇧🇷 🇰🇷 🇩🇪</span>',
       'about-label': 'Info',
       'bio-intro': 'Comfortable in ambiguity. Comfortable across cultures. Comfortable recognising that living and designing is a continuous learning journey.',
@@ -212,13 +227,16 @@
       'exp-adriel': 'Designed data-informed user experiences and managed cross-functional delivery for a B2B advertising platform.',
       'exp-yonsei': 'Led UX/UI projects translating academic research into applied digital products. Coordinated junior researchers and delivered outcomes in collaboration with industry partners.',
       'exp-space': 'Contributed to UX and system design for a national MOOC platform, supporting complex learning interactions and digital experience development.',
-      'contact-headline': "Let's work<br><em class=\"not-italic font-normal\" style=\"color: #FAC775;\">together.</em>",
+      'how-label': 'How I work',
+      'how-p1': 'I work in the codebase, not just in Figma. My workflow: identify the hypothesis, prototype it in code using AI tooling, test with real users on a branch the same day, then hand off to engineering for review and release.',
+      'how-p2': "693 commits in the last year — all to Echometer's private repository. Not to replace engineers, but because decisions only become real when you test them in the actual product.",
+      'contact-headline': "Let's work <em class=\"not-italic font-normal\" style=\"color: #FAC775;\">together.</em>",
       'footer-location': 'Münster, Germany',
     },
     pt: {
       'header-sub': 'Designer de Produto Sênior — Münster, DE',
-      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
-      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'header-desc': 'Especializada em produtos B2B SaaS complexos e próximos de engenharia. Trabalho que move métricas.',
+      'nav-home': 'Início', 'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
       'intro-headline': '<span class="text-muted">Camilla é </span><span class="text-primary font-medium">designer de produto</span><span class="text-muted"> e </span><span style="color: #FAC775; font-style: italic;">pesquisadora de UX</span><span class="text-muted"> que transforma sistemas complexos em experiências que as pessoas realmente querem usar — com 7 anos de experiência internacional.</span><span class="intro-flags">🇧🇷 🇰🇷 🇩🇪</span>',
       'about-label': 'Info',
       'bio-intro': 'Confortável com a ambiguidade. Confortável entre culturas. Confortável reconhecendo que viver e projetar é uma jornada de aprendizado contínuo.',
@@ -244,6 +262,9 @@
       'exp-adriel': 'Design de experiências de usuário baseadas em dados e gestão de entregas cross-functional para uma plataforma de publicidade B2B.',
       'exp-yonsei': 'Liderança de projetos de UX/UI traduzindo pesquisa acadêmica em produtos digitais aplicados. Coordenação de pesquisadores júniores e entrega de resultados em colaboração com parceiros da indústria.',
       'exp-space': 'Contribuição para o design de UX e sistema de uma plataforma nacional de MOOC, apoiando interações de aprendizado complexas e o desenvolvimento da experiência digital.',
+      'how-label': 'Como trabalho',
+      'how-p1': 'Trabalho no codebase, não apenas no Figma. Meu fluxo: identificar a hipótese, prototipar em código com ferramentas de IA, testar com usuários reais em uma branch no mesmo dia e então passar para a engenharia revisar e lançar.',
+      'how-p2': '693 commits no último ano — todos no repositório privado da Echometer. Não para substituir engenheiros, mas porque decisões só se tornam reais quando você as testa no produto de verdade.',
       'contact-headline': 'Vamos trabalhar<br><em class="not-italic font-normal" style="color: #FAC775;">juntas.</em>',
       'footer-location': 'Münster, Alemanha',
     }

@@ -74,15 +74,16 @@
         <a href="#" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
         <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
     </div>
-    <p class="header-desc font-sans text-sm text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specializing in complex B2B SaaS and developer-adjacent products. Work that moves metrics.</p>
+    <p class="header-desc font-sans text-sm text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.</p>
 </div>
 
 
 <!-- STICKY NAV -->
 <nav class="flex justify-between items-center px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
     <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
-        <li><a href="#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
-        <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+        <li><a href="index.html" class="font-mono text-xs text-accent no-underline tracking-widest uppercase" data-i18n="nav-home">Home</a></li>
+        <li><a href="work.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+        <li><a href="about-v2.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
         <li><a href="#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
         <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
     </ul>
@@ -96,7 +97,7 @@
 <section class="min-h-screen flex flex-col justify-end px-4 md:px-16 pb-20 relative overflow-hidden" id="top">
     <div class="hero-bg-text absolute top-1/2 -right-4 font-sans font-semibold text-primary/[0.022] leading-none select-none pointer-events-none -tracking-widest text-fluid-bg -translate-y-1/2">7yr</div>
     <h1 class="fade-1 font-sans font-light leading-tight mb-8 max-w-4xl text-fluid-hero-lg tracking-heading-md" data-i18n="hero-headline">Design that ships.<br><em class="not-italic font-normal" style="color: #FAC775;">Systems that hold.</em></h1>
-    <p class="fade-2 font-sans font-light text-2xl text-secondary mb-12 max-w-xl" data-i18n="hero-sub-body">Strategy and UX grounded in user interviews and A/B experimentation. My prototypes live in production code — tested with real users, refined before release.</p>
+    <p class="fade-2 font-sans font-light text-2xl text-secondary mb-12 max-w-xl" data-i18n="hero-sub-body">Strategy and UX grounded in user interviews and A/B experimentation. My prototypes run in code, not Figma — tested with real users, reviewed by engineering before release.</p>
     <div class="fade-3 flex flex-wrap items-center gap-6 md:gap-8">
         <a href="#work" class="font-mono text-xs font-medium tracking-widest uppercase no-underline px-6 py-2.5 border border-accent text-accent rounded-[4px] hover:bg-accent hover:text-bg transition-all" data-i18n="hero-cta">View Work →</a>
         <a href="#contact" class="font-mono text-xs tracking-widest uppercase no-underline text-secondary hover:text-primary transition-colors" data-i18n="hero-contact">Get in touch</a>
@@ -123,7 +124,7 @@
                     </div>
                 </div>
                 <div class="work-title font-sans text-xl font-light tracking-tight transition-colors mb-2" style="letter-spacing: -0.02em;" data-i18n="cs1-title">Navigation Redesign</div>
-                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs1-desc">Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. Navigated rollout tension between existing and new users.</div>
+                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs1-desc">Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. +12% teampage visits (87.4% confidence, live A/B experiment).</div>
             </div>
         </a>
 
@@ -142,7 +143,7 @@
                     </div>
                 </div>
                 <div class="work-title font-sans text-xl font-light tracking-tight transition-colors mb-2" style="letter-spacing: -0.02em;" data-i18n="cs2-title">Retrospective Prep Flow</div>
-                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs2-desc">Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution, and advocated for the deferred problem in subsequent cycles.</div>
+                <div class="font-sans text-lg text-secondary font-light" data-i18n="cs2-desc">Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution. 29% → 38% first retro completion (A/B experiment, n=571).</div>
             </div>
         </a>
 
@@ -207,6 +208,13 @@
         <div>
             <p class="font-sans text-base italic mb-3 text-accent" data-i18n="ai-label">AI & Design Practice</p>
             <h2 class="font-sans font-light text-primary text-fluid-headline tracking-tight" data-i18n="ai-headline"><span class="font-normal">Code</span> as <span style="color: #FAC775;">source of truth</span>.<br>Figma as sketchbook.</h2>
+            <div class="flex flex-wrap gap-1.5 mt-6">
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">HTML</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">CSS</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Angular</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Codex</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Claude Code</span>
+            </div>
         </div>
         <div>
             <blockquote class="font-sans font-light text-accent mb-10 text-fluid-quote tracking-heading italic leading-snug" data-i18n="ai-quote">"Anything worth testing needs to be in the real product to get meaningful signal."</blockquote>
@@ -223,8 +231,8 @@
         <h2 class="font-sans font-light leading-tight text-fluid-headline tracking-tight" data-i18n="about-headline">Design<br>as a <em class="not-italic font-normal" style="color: #FAC775;">hypothesis,</em><br>not a deliverable.</h2>
     </div>
     <div>
-        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p1">Most teams treat design as a deliverable. I treat it as a hypothesis — tested in production code, not in a Figma file waiting for handoff.</p>
-        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p2">That changes everything around design. Research happens on real flows. Engineering inherits validated decisions, not assumptions to debug. The feedback loop closes inside the product.</p>
+        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p1">Design is the byproduct of a relentless curiosity about how to deliver unforgettable experiences to users. I treat design as a hypothesis — to be tested. Our understanding of it, our knowledge of standards, methodologies, solutions and possibilities must be continuously reflected on and pushed forward.</p>
+        <p class="font-sans font-light text-2xl text-secondary leading-loose mb-5" data-i18n="about-p2">Design must start at the users. Good design is a system that keeps working as the product, the team, and the context evolve. Feedback isn't a threat to the work — it's how the work improves, and how everyone's definition of "good" gets sharper.</p>
         <div class="flex gap-6 mt-8">
             <a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light hover:border-accent-light transition-colors" data-i18n="about-cv">Download CV</a>
             <a href="https://linkedin.com/in/camillamaia" target="_blank" rel="noopener noreferrer" class="font-mono text-xs tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light hover:border-accent-light transition-colors">LinkedIn</a>
@@ -234,8 +242,12 @@
 
 <!-- CONTACT -->
 <section class="px-4 md:px-16 py-12 md:py-20 border-t border-white/10" id="contact">
-    <h2 class="font-sans font-light leading-tight mb-8 text-fluid-h3 tracking-tight" data-i18n="contact-headline">Let's work<br><em class="not-italic font-normal" style="color: #FAC775;">together.</em></h2>
-    <a href="mailto:c.cav.maia@gmail.com" class="font-mono text-base text-accent no-underline border-b border-accent-dim pb-0.5 tracking-wide hover:text-accent-light transition-colors">c.cav.maia@gmail.com</a>
+    <h2 class="font-sans font-light leading-tight mb-8 text-fluid-h3 tracking-tight" data-i18n="contact-headline">Let's work<em class="not-italic font-normal" style="color: #FAC775;">together.</em></h2>
+    <div class="flex gap-6 mt-8">
+        <a href="mailto:c.cav.maia@gmail.com" class="font-mono text-base text-accent no-underline border-b border-accent-dim pb-0.5 tracking-wide hover:text-accent-light transition-colors">c.cav.maia@gmail.com</a>
+        <a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-base text-accent no-underline border-b border-accent-dim pb-0.5 tracking-wide uppercase font-light hover:text-accent-light transition-colors" data-i18n="bio-cv">Download CV</a>
+        <a href="https://linkedin.com/in/camillamaia" target="_blank" class="font-mono text-base tracking-widest uppercase text-accent no-underline border-b border-accent-dim pb-0.5 hover:text-accent-light transition-colors">LinkedIn</a>
+    </div>
 </section>
 
 <footer class="px-4 md:px-16 py-6 md:py-8 border-t border-white/10 flex flex-col md:flex-row md:justify-between md:items-center gap-2 md:gap-0">
@@ -247,15 +259,15 @@
     const translations = {
         en: {
             'header-sub': 'Senior Product Designer — Münster, DE',
-            'header-desc': 'Specializing in complex B2B SaaS and developer-adjacent products. Work that moves metrics.',
-            'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+            'header-desc': 'Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.',
+            'nav-home': 'Home', 'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
             'hero-headline': 'Design that ships.<br><em class="not-italic font-normal" style="color: #FAC775;">Systems that hold.</em>',
-            'hero-sub-body': 'Strategy and UX grounded in user interviews and A/B experimentation. My prototypes live in production code — tested with real users, refined before release.',
+            'hero-sub-body': 'Strategy and UX grounded in user interviews and A/B experimentation. My prototypes run in code, not Figma — tested with real users, reviewed by engineering before release.',
             'hero-cta': 'View Work →', 'hero-contact': 'Get in touch',
             'cs1-title': 'Navigation Redesign',
-            'cs1-desc': "Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. Navigated rollout tension between existing and new users.",
+            'cs1-desc': "Rebuilt the product's information architecture after workshop research revealed a fundamental user mental model mismatch. +12% teampage visits (87.4% confidence, live A/B experiment).",
             'cs2-title': 'Retrospective Prep Flow',
-            'cs2-desc': 'Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution, and advocated for the deferred problem in subsequent cycles.',
+            'cs2-desc': 'Redesigned the central retro preparation flow. Identified scope boundaries with founders, shipped a validated solution. 29% → 38% first retro completion (A/B experiment, n=571).',
             'cs3-title': 'Signup & Activation',
             'cs3-desc': 'Two consecutive iterations on top-of-funnel and M1 activation. +192% first retro completion, +49.6% signup conversion. Implemented directly in the production codebase.',
             'cs1-tag1': 'IA / Systems', 'cs1-tag2': 'Discovery',
@@ -274,23 +286,23 @@
             'ai-p1': 'I changed how my team thinks about prototyping and validation. We were using Figma as the source of truth — but I found that decisions only became real when tested in the actual product. So I started using AI-assisted development to work directly in code: running user interviews on a branch, iterating the same day, then handing off a validated, working version to engineering for security review and backend work.',
             'ai-p2': 'Figma became a sketching tool, not a deliverable. The signup A/B tests came out of that workflow — we got 99% statistical confidence because we were testing with real users in a real product, not a prototype.',
             'about-headline': 'Design<br>as a <em class="not-italic font-normal" style="color: #FAC775;">hypothesis,</em><br>not a deliverable.',
-            'about-p1': 'Most teams treat design as a deliverable. I treat it as a hypothesis — tested in production code, not in a Figma file waiting for handoff.',
-            'about-p2': 'That changes everything around design. Research happens on real flows. Engineering inherits validated decisions, not assumptions to debug. The feedback loop closes inside the product.',
+            'about-p1': 'Design is the byproduct of a relentless curiosity about how to deliver unforgettable experiences to users. I treat design as a hypothesis — to be tested. Our understanding of it, our knowledge of standards, methodologies, solutions and possibilities must be continuously reflected on and pushed forward.',
+            'about-p2': 'Design must start at the users. Good design is a system that keeps working as the product, the team, and the context evolve. Feedback isn\'t a threat to the work — it\'s how the work improves, and how everyone\'s definition of "good" gets sharper.',
             'about-cv': 'Download CV',
-            'contact-headline': "Let's work<br><em class=\"not-italic font-normal\" style=\"color: #FAC775;\">together.</em>",
+            'contact-headline': "Let's work <em class=\"not-italic font-normal\" style=\"color: #FAC775;\">together.</em>",
             'footer-location': 'Münster, Germany',
         },
         pt: {
             'header-sub': 'Designer de Produto Sênior — Münster, DE',
             'header-desc': 'Especializada em produtos B2B SaaS complexos e próximos de engenharia. Trabalho que move métricas.',
-            'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+            'nav-home': 'Início', 'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
             'hero-headline': 'Design que entrega.<br><em class="not-italic font-normal" style="color: #FAC775;">Sistemas que permanecem.</em>',
-            'hero-sub-body': 'Estratégia e UX fundamentadas em entrevistas com usuários e experimentação A/B. Meus protótipos vivem em código de produção — testados com usuários reais, refinados antes do lançamento.',
+            'hero-sub-body': 'Estratégia e UX fundamentadas em entrevistas com usuários e experimentação A/B. Meus protótipos rodam em código, não no Figma — testados com usuários reais, revisados pela engenharia antes do lançamento.',
             'hero-cta': 'Ver Projetos →', 'hero-contact': 'Entrar em contato',
             'cs1-title': 'Redesign de Navegação',
-            'cs1-desc': 'Reestruturei a arquitetura de informação do produto após workshops de pesquisa revelarem um modelo mental equivocado dos usuários. Conduzi o rollout equilibrando necessidades de usuários existentes e novos.',
+            'cs1-desc': 'Reestruturei a arquitetura de informação do produto após workshops de pesquisa revelarem um modelo mental equivocado dos usuários. +12% de visitas à teampage (87,4% de confiança, experimento A/B ativo).',
             'cs2-title': 'Fluxo de Preparação de Retro',
-            'cs2-desc': 'Redesenhei o fluxo central de preparação de retrospectiva. Defini os limites de escopo com os fundadores, entreguei uma solução validada e defendi a continuidade do problema adiado nos ciclos seguintes.',
+            'cs2-desc': 'Redesenhei o fluxo central de preparação de retrospectiva. Defini os limites de escopo com os fundadores, entreguei uma solução validada. 29% → 38% de conclusão da primeira retro (experimento A/B, n=571).',
             'cs3-title': 'Cadastro & Ativação',
             'cs3-desc': 'Duas iterações consecutivas no topo do funil e na ativação M1. +192% na conclusão da primeira retro, +49,6% na conversão de cadastro. Implementado diretamente no codebase de produção.',
             'cs1-tag1': 'Arq. Informação / Sistemas', 'cs1-tag2': 'Descoberta',

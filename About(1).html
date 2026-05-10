@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>About — Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:        #0e0d0b;
+    --bg-2:      #15130f;
+    --ink:       #f3ede0;
+    --ink-mute:  #9a9388;
+    --ink-dim:   #5f5a51;
+    --rule:      #26231e;
+    --accent:    #e8b14a;        /* warm amber, not pure yellow */
+    --accent-ink:#1a1611;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv11"}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;letter-spacing:.02em}
+  .serif{font-family:'Fraunces',serif;font-optical-sizing:auto}
+
+  /* ---------- top bar ---------- */
+  .bar{
+    position:sticky;top:0;z-index:50;
+    display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:32px;
+    padding:18px 40px;
+    background:rgba(14,13,11,.78);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--rule);
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:500;letter-spacing:.04em;font-size:13px}
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(232,177,74,.12)}
+  nav.primary{display:flex;gap:34px;justify-self:start;margin-left:18px}
+  nav.primary a{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-mute);position:relative;padding:6px 0}
+  nav.primary a:hover{color:var(--ink)}
+  nav.primary a[aria-current="page"]{color:var(--ink)}
+  nav.primary a[aria-current="page"]::after{
+    content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--accent);
+  }
+  .util{display:flex;align-items:center;gap:18px}
+  .lang{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-size:11px;letter-spacing:.14em}
+  .lang button{background:transparent;border:0;color:var(--ink-mute);padding:6px 12px;cursor:pointer;font:inherit;letter-spacing:inherit}
+  .lang button.on{background:var(--accent);color:var(--accent-ink);font-weight:600}
+  .cv{
+    display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    border:1px solid var(--rule);padding:8px 14px;border-radius:999px;color:var(--ink-mute);
+  }
+  .cv:hover{color:var(--ink);border-color:var(--ink-dim)}
+
+  /* ---------- hero ---------- */
+  main{max-width:1440px;margin:0 auto;padding:0 40px}
+  .hero{
+    display:grid;grid-template-columns:1.05fr 1fr;gap:64px;
+    padding:96px 0 64px;align-items:end;
+  }
+  .eyebrow{
+    display:flex;align-items:center;gap:14px;
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+    margin-bottom:36px;
+  }
+  .eyebrow .num{color:var(--accent);font-weight:500}
+  .eyebrow .line{flex:0 0 64px;height:1px;background:var(--rule)}
+  h1.q{
+    font-family:'Fraunces',serif;font-weight:300;
+    font-size:clamp(40px,5.2vw,76px);line-height:1.02;letter-spacing:-.02em;
+    margin:0 0 28px;text-wrap:balance;
+  }
+  h1.q em{font-style:italic;color:var(--accent);font-weight:300}
+  .lede{
+    font-family:'Fraunces',serif;font-weight:300;font-style:italic;
+    font-size:22px;line-height:1.45;color:var(--ink-mute);max-width:46ch;margin:0 0 40px;
+  }
+  .meta{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;
+    padding-top:26px;border-top:1px solid var(--rule);
+    max-width:560px;
+  }
+  .meta dt{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:8px}
+  .meta dd{margin:0;font-size:14px;color:var(--ink)}
+  .meta dd .sub{display:block;color:var(--ink-mute);font-size:12px;margin-top:2px}
+
+  .portrait{
+    position:relative;aspect-ratio:4/5;border-radius:2px;overflow:hidden;
+    background:linear-gradient(160deg,#2b2620 0%,#181511 60%,#0f0d0a 100%);
+    border:1px solid var(--rule);
+  }
+  .portrait .placeholder{
+    position:absolute;inset:0;display:grid;place-items:center;
+    background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 1px,transparent 1px 14px);
+  }
+  .portrait .placeholder span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--ink-dim);text-transform:uppercase}
+  .portrait .frame-tag{
+    position:absolute;left:14px;bottom:14px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--ink-mute);text-transform:uppercase;
+    background:rgba(14,13,11,.72);padding:6px 10px;border:1px solid var(--rule);border-radius:2px;
+  }
+  .portrait .frame-tag b{color:var(--ink);font-weight:500}
+  .portrait .corner{
+    position:absolute;width:18px;height:18px;border:1px solid var(--accent);
+  }
+  .portrait .corner.tl{top:10px;left:10px;border-right:0;border-bottom:0}
+  .portrait .corner.br{bottom:10px;right:10px;border-left:0;border-top:0}
+
+  /* ---------- chapters ---------- */
+  section.chapters{padding:80px 0 48px}
+  .section-head{
+    display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:32px;
+    border-top:1px solid var(--rule);padding-top:28px;margin-bottom:64px;
+  }
+  .section-head .label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-dim)}
+  .section-head .label b{color:var(--accent);font-weight:500;margin-right:10px}
+  .section-head h2{
+    font-family:'Fraunces',serif;font-weight:300;font-size:34px;letter-spacing:-.01em;margin:0;
+  }
+  .section-head .count{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--ink-dim)}
+
+  .chapters-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .chapter{background:var(--bg);padding:36px 32px 40px;display:flex;flex-direction:column;gap:18px;min-height:340px;position:relative;transition:background .35s ease}
+  .chapter:hover{background:var(--bg-2)}
+  .chapter .top{display:flex;justify-content:space-between;align-items:flex-start;color:var(--ink-dim);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+  .chapter .top b{color:var(--ink-mute);font-weight:500}
+  .chapter .place{
+    font-family:'Fraunces',serif;font-weight:300;font-size:44px;line-height:1;letter-spacing:-.01em;
+    margin-top:12px;
+  }
+  .chapter .place em{font-style:italic;color:var(--accent);font-weight:300}
+  .chapter .years{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--ink-mute);margin-top:-4px}
+  .chapter p{font-size:15px;line-height:1.55;color:var(--ink);margin:14px 0 0;max-width:34ch}
+  .chapter .pull{
+    margin-top:auto;padding-top:20px;border-top:1px dashed var(--rule);
+    font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:14px;color:var(--ink-mute);
+  }
+  .chapter .index{
+    position:absolute;right:24px;top:24px;
+    font-family:'Fraunces',serif;font-weight:300;font-size:14px;color:var(--ink-dim)
+  }
+
+  /* ---------- principles strip ---------- */
+  .principles{
+    display:grid;grid-template-columns:240px 1fr;gap:48px;
+    padding:80px 0;border-top:1px solid var(--rule);
+  }
+  .principles h3{font-family:'Fraunces',serif;font-weight:300;font-size:22px;margin:0;color:var(--ink-mute)}
+  .principles h3 b{color:var(--ink);font-weight:300;display:block}
+  .pri-list{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 56px}
+  .pri{display:flex;gap:18px}
+  .pri .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:.18em;padding-top:4px;width:28px;flex:0 0 28px}
+  .pri h4{font-family:'Inter',sans-serif;font-weight:500;font-size:15px;margin:0 0 6px;color:var(--ink)}
+  .pri p{margin:0;font-size:13.5px;line-height:1.55;color:var(--ink-mute)}
+
+  /* ---------- footer ---------- */
+  footer{
+    border-top:1px solid var(--rule);padding:40px;margin-top:40px;
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--ink-dim);text-transform:uppercase;
+  }
+  footer .center{justify-self:center;color:var(--ink-mute)}
+  footer .right{justify-self:end;display:flex;gap:18px}
+  footer a:hover{color:var(--ink)}
+
+  @media (max-width:980px){
+    .hero{grid-template-columns:1fr;gap:40px}
+    .chapters-grid{grid-template-columns:1fr}
+    .principles{grid-template-columns:1fr}
+    .pri-list{grid-template-columns:1fr}
+    nav.primary{display:none}
+  }
+</style>
+</head>
+<body data-screen-label="01 About">
+  <header class="bar">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Marina Ferraz</span>
+    </div>
+    <nav class="primary" aria-label="Primary">
+      <a href="#">Home</a>
+      <a href="#">Work</a>
+      <a href="#" aria-current="page">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="util">
+      <a class="cv" href="#"><span>CV</span><span aria-hidden="true">↓</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button class="on" type="button">EN</button>
+        <button type="button">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" data-screen-label="Hero">
+      <div>
+        <div class="eyebrow">
+          <span class="num">01</span>
+          <span class="line"></span>
+          <span>About — Product Designer</span>
+        </div>
+        <h1 class="q">Why do teams become so distant from the users their <em>product</em> is trying to serve?</h1>
+        <p class="lede">Because nobody dared to ask the right questions early enough. So I built a practice around asking them — across three countries, three cultures, and a dozen products.</p>
+        <dl class="meta">
+          <div>
+            <dt>Based in</dt>
+            <dd>Berlin, DE<span class="sub">CET · open to remote</span></dd>
+          </div>
+          <div>
+            <dt>Practice</dt>
+            <dd>Product &amp; Research<span class="sub">B2B · fintech · health</span></dd>
+          </div>
+          <div>
+            <dt>Speaks</dt>
+            <dd>PT · EN · DE<span class="sub">conversational KO</span></dd>
+          </div>
+        </dl>
+      </div>
+      <figure class="portrait" aria-label="Portrait placeholder">
+        <div class="placeholder"><span>Portrait — drop image here</span></div>
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
+        <span class="frame-tag"><b>MF / 2026</b> · São Paulo</span>
+      </figure>
+    </section>
+
+    <!-- CHAPTERS -->
+    <section class="chapters" data-screen-label="Chapters">
+      <div class="section-head">
+        <div class="label"><b>02</b>Three chapters, one practice</div>
+        <h2>What each place taught me about listening.</h2>
+        <div class="count">03 / 03</div>
+      </div>
+
+      <div class="chapters-grid">
+        <article class="chapter">
+          <div class="top"><span><b>BR</b> &nbsp;Brazil</span><span>Origin</span></div>
+          <div class="place">São <em>Paulo</em></div>
+          <div class="years">2014 — 2018 · 4 years</div>
+          <p>I practiced putting myself in the shoes of others. Empathy wasn't a research method here — it was a survival skill, and the foundation everything else got built on.</p>
+          <div class="pull">“Listen first. The brief comes second.”</div>
+          <span class="index">i.</span>
+        </article>
+
+        <article class="chapter">
+          <div class="top"><span><b>KR</b> &nbsp;Korea</span><span>Craft</span></div>
+          <div class="place">Se<em>oul</em></div>
+          <div class="years">2018 — 2021 · 3 years</div>
+          <p>I learned that stubbornness turns the fear of failure into craft. Iteration as a discipline, not a phase — and shipping a tenth draft without losing the spark of the first.</p>
+          <div class="pull">“Ten drafts deep, still curious.”</div>
+          <span class="index">ii.</span>
+        </article>
+
+        <article class="chapter">
+          <div class="top"><span><b>DE</b> &nbsp;Germany</span><span>Now</span></div>
+          <div class="place">Ber<em>lin</em></div>
+          <div class="years">2021 — present · 5 years</div>
+          <p>I learned that to listen, I needed to let go of my own assumptions. Strong opinions, loosely held — and the patience to let the team's clearest answer outrank my fastest one.</p>
+          <div class="pull">“Quiet rooms make loud insights.”</div>
+          <span class="index">iii.</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section class="principles" data-screen-label="Principles">
+      <h3>How I actually<br/><b>work with teams.</b></h3>
+      <div class="pri-list">
+        <div class="pri"><span class="n">01</span><div><h4>Questions before answers</h4><p>Reframe the brief in writing. If we can't say what we're solving in one sentence, we're not solving it yet.</p></div></div>
+        <div class="pri"><span class="n">02</span><div><h4>Research as a habit</h4><p>Five conversations a month, not five hundred a quarter. Compounding signal beats heroic effort.</p></div></div>
+        <div class="pri"><span class="n">03</span><div><h4>Prototype the argument</h4><p>The fastest way to win a debate is to make the disagreement clickable.</p></div></div>
+        <div class="pri"><span class="n">04</span><div><h4>Ship and revise</h4><p>Designs aren't finished — they're released. Then we listen again.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="left">© 2026 — Marina Ferraz</div>
+    <div class="center">Available · Q3 2026</div>
+    <div class="right">
+      <a href="#">LinkedIn ↗</a>
+      <a href="#">Read.cv ↗</a>
+      <a href="#"><span class="__cf_email__" data-cfemail="aec6cbc2c2c1eec3c880dddadbcac7c1">[email&#160;protected]</span></a>
+    </div>
+  </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

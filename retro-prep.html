@@ -33,18 +33,19 @@
     <a href="index.html" class="header-name font-sans text-sm font-medium text-muted tracking-tight transition-colors duration-300 no-underline">Camilla Maia</a>
     <span class="header-sub font-mono text-xs text-muted tracking-wide transition-colors duration-300" data-i18n="header-sub">Senior Product Designer — Münster, DE</span>
   </div>
-  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.</p>
+  <p class="header-desc font-sans font-light text-lg text-secondary leading-relaxed text-left md:text-right max-w-xl transition-colors duration-300" data-i18n="header-desc">Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.</p>
 </div>
 
 <nav class="flex flex-wrap justify-between items-center gap-3 px-4 md:px-16 py-3 bg-bg/95 backdrop-blur-md sticky top-0 z-50 border-b border-white/5">
   <ul class="flex flex-wrap gap-x-4 gap-y-2 md:gap-8 list-none">
-    <li><a href="index.html#work" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
-    <li><a href="about.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
+    <li><a href="index.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-home">Home</a></li>
+    <li><a href="work.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-work">Work</a></li>
+    <li><a href="about-v2.html" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-about">About</a></li>
     <li><a href="index.html#contact" class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-contact">Contact</a></li>
     <li><a href="assets/files/camilla-maia-cv-2026.pdf" download class="font-mono text-xs text-primary/80 no-underline tracking-widest uppercase hover:text-accent transition-colors" data-i18n="nav-cv">CV ↓</a></li>
   </ul>
   <div class="flex flex-wrap items-center gap-3 md:gap-6">
-    <a href="index.html#work" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
+    <a href="work.html" class="font-mono text-xs text-muted tracking-widest uppercase hover:text-accent transition-colors no-underline" data-i18n="nav-back">← All Work</a>
     <div class="flex border border-muted overflow-hidden">
       <button onclick="setLang('en')" class="lang-btn active font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">EN</button>
       <button onclick="setLang('pt')" class="lang-btn font-mono text-xs tracking-widest uppercase text-primary/80 bg-transparent border-none px-3 py-1.5 cursor-pointer transition-all">PT</button>
@@ -78,8 +79,28 @@
             <div class="font-sans text-base text-primary" data-i18n="info-methods-value">User interviews, usability testing, support ticket analysis</div>
           </div>
           <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-team-label">Team</div>
+            <div class="font-sans text-base text-primary" data-i18n="info-team-value">4 — PM, Designer, 2 Engineers</div>
+          </div>
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-constraints-label">Constraints</div>
+            <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-constraints-value">Item picker was deferred — item rotation logic, whiteboard wiring, and survey lock-in after sending made it too complex to fix in scope. Shipped a validated partial fix instead.</div>
+          </div>
+          <div>
+            <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-role-label">Role</div>
+            <div class="flex flex-wrap gap-1.5 mt-1">
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Strategy</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Design</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Implementation</span>
+              <span class="font-mono text-xs tracking-widest uppercase text-secondary border border-white/20 rounded px-2 py-0.5">Validation</span>
+            </div>
+          </div>
+          <div>
             <div class="font-mono text-xs text-muted mb-1 tracking-wide" data-i18n="info-credits-label">Credits</div>
-            <div class="font-sans font-light text-lg text-secondary leading-relaxed" data-i18n="info-credits-value">Research, Strategy, Design. Camilla Maia</div>
+            <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value">Strategy, UX/ UI Design, Prototyping. Camilla Maia</div>
+            <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value2">Strategy, Scoping. Jean Michel</div>
+            <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value3">Strategy, Implementation, Review. Robin Roschlau</div>
+            <div class="font-sans text-sm text-secondary leading-relaxed" data-i18n="info-credits-value4">Implementation. Johannes Niermman</div>
           </div>
         </div>
       </div>
@@ -125,8 +146,8 @@
     </div>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-    <img class="flex w-full h-auto md:h-[600px] object-contain md:object-cover rounded" src="assets/img/Retro_Prep_PLG.png" alt="Retro templates">
-    <img class="flex w-full h-auto md:h-[600px] object-contain md:object-cover rounded" src="assets/img/Retro_Prep_CheckIn.png" alt="Retro preparation checkin">
+    <img class="flex w-full h-auto object-contain rounded" src="assets/img/Retro_Prep_PLG.png" alt="Retro templates">
+    <img class="flex w-full h-auto object-contain rounded" src="assets/img/Retro_Prep_CheckIn.png" alt="Retro preparation checkin">
     <img class="flex w-full object-contain md:object-cover rounded" src="assets/img/Retro_Prep_Survey.png" alt="Retro preparation survey">
   </div>
 </section>
@@ -208,17 +229,21 @@
   const translations = {
     en: {
       'header-sub': 'Senior Product Designer — Münster, DE',
-      'header-desc': 'Designer specializing in complex B2B SaaS and developer-adjacent products. I deliver end-to-end product design and ship work that moves metrics. Open to remote-first roles in EU and US time zones.',
-      'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
+      'header-desc': 'Specialist in complex B2B SaaS and developer-adjacent products. Design that moves metrics.',
+      'nav-home': 'Home', 'nav-work': 'Work', 'nav-about': 'About', 'nav-contact': 'Contact', 'nav-cv': 'CV ↓',
       'nav-back': '← All Work',
       'hero-title': 'Retrospective<br><em class="not-italic font-normal" style="color: #FAC775;">Prep Flow</em>',
       'overview-label': 'Overview',
       'info-company-label': 'Company',
       'info-year-label': 'Year',
-      'info-methods-label': 'Methods',
-      'info-methods-value': 'User interviews, usability testing, support ticket analysis',
+      'info-methods-label': 'Methods', 'info-team-label': 'Team', 'info-constraints-label': 'Constraints',
+      'info-methods-value': 'User interviews, usability testing, support ticket analysis', 'info-team-value': '4 — PM, Designer, 2 Engineers', 'info-constraints-value': 'Item picker was deferred — item rotation logic, whiteboard wiring, and survey lock-in after sending made it too complex to fix in scope. Shipped a validated partial fix instead.',
+      'info-role-label': 'Role',
       'info-credits-label': 'Credits',
-      'info-credits-value': 'Research, Strategy, Design. Camilla Maia',
+      'info-credits-value': 'Strategy, UX/ UI Design, Prototyping. Camilla Maia',
+      'info-credits-value2': 'Strategy, Scoping. Jean Michel',
+      'info-credits-value3': 'Strategy, Implementation, Review. Robin Roschlau',
+      'info-credits-value4': 'Implementation. Johannes Niermman',
       'intro-p1': "Users weren't converting to their first retrospective. Support tickets and user interviews pointed to the same problem: the preparation flow was cognitively overwhelming and structurally unclear.",
       /* FIX 1: TI → I */
       'intro-p2': 'I identified cognitive overload as the primary hypothesis. What made this project interesting was what we <span class="text-primary">chose not to fix</span> — and why that was the right call.',
@@ -260,17 +285,21 @@
     },
     pt: {
       'header-sub': 'Designer de Produto Sênior — Münster, DE',
-      'header-desc': 'Designer especializada em produtos B2B SaaS complexos e próximos de engenharia. Entrego design de produto end-to-end e lanço trabalho que move métricas. Aberta a vagas remote-first nos fusos da Europa e EUA.',
-      'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
+      'header-desc': 'Especializada em produtos B2B SaaS complexos e próximos de engenharia. Trabalho que move métricas.',
+      'nav-home': 'Início', 'nav-work': 'Projetos', 'nav-about': 'Sobre', 'nav-contact': 'Contato', 'nav-cv': 'CV ↓',
       'nav-back': '← Todos os Projetos',
       'hero-title': 'Fluxo de<br><em class="not-italic font-normal" style="color: #FAC775;">Preparação de Retro</em>',
       'overview-label': 'Visão Geral',
       'info-company-label': 'Empresa',
       'info-year-label': 'Ano',
-      'info-methods-label': 'Métodos',
-      'info-methods-value': 'Entrevistas com usuários, testes de usabilidade, análise de tickets de suporte',
+      'info-methods-label': 'Métodos', 'info-team-label': 'Time', 'info-constraints-label': 'Restrições',
+      'info-methods-value': 'Entrevistas com usuários, testes de usabilidade, análise de tickets de suporte', 'info-team-value': '4 — PM, Designer, 2 Engenheiros', 'info-constraints-value': 'O seletor de itens foi adiado — lógica de rotação, integração com quadro branco e bloqueio de pesquisa após envio tornaram a correção complexa demais para o escopo. Entregamos uma solução parcial validada.',
+      'info-role-label': 'Função',
       'info-credits-label': 'Créditos',
-      'info-credits-value': 'Pesquisa, Estratégia, Design. Camilla Maia',
+      'info-credits-value': 'Estratégia, UX/ Design de UI, Prototipagem. Camilla Maia',
+      'info-credits-value2': 'Estratégia, Escopo. Jean Michel',
+      'info-credits-value3': 'Estratégia, Implementação, Revisão. Robin Roschlau',
+      'info-credits-value4': 'Implementação. Johannes Niermman',
       'intro-p1': 'Os usuários não estavam convertendo para a primeira retrospectiva deles. Tickets de suporte e entrevistas com usuários apontavam para o mesmo problema: o fluxo de preparação era cognitivamente sobrecarregado e estruturalmente confuso.',
       'intro-p2': 'O time abraçou a tarefa em conjunto — mas identifiquei de forma independente a sobrecarga cognitiva como a hipótese principal. O que tornou este projeto interessante foi o que <span class="text-primary">escolhemos não resolver</span> — e por que essa foi a decisão certa.',
       'problem-label': 'O Problema',
