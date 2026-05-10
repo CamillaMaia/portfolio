@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Retrospective Prep Flow — Camilla Maia</title>
+  <meta name="description" content="Case study: redesigning a cognitively overwhelming retro preparation flow into a structured, visually consistent experience — validated by a measurable lift in retro survey engagement.">
   <link rel="canonical" href="https://camillamaia.site/retro-prep.html">
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon-bracket-c.svg">
   <link rel="stylesheet" href="assets/css/output.css">
@@ -58,7 +59,7 @@
   <div class="flex flex-col md:flex-row gap-8 md:gap-40">
     <div class="flex flex-col mb-8 md:mb-12">
       <h1 class="font-sans font-light leading-tight text-fluid-hero tracking-heading-md" data-i18n="hero-title">Retrospective<br><em class="not-italic font-normal" style="color: #FAC775;">Prep Flow</em></h1>
-      <span class="font-mono text-sm text-muted">2022</span>
+      <span class="font-mono text-sm text-muted">Year · 2022</span>
       <div class="flex flex-col gap-4 mt-4">
         <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p1">Users weren't converting to their first retrospective. Support tickets and user interviews pointed to the same problem: the preparation flow was cognitively overwhelming and structurally unclear.</p>
         <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="intro-p2">I identified cognitive overload as the primary hypothesis. What made this project interesting was what we <span class="text-primary">chose not to fix</span> — and why that was the right call.</p>
@@ -173,13 +174,24 @@
 <img class="flex object-cover w-full h-[250px] md:h-[400px]" src="assets/img/Retro_Prep_Templates.png" alt="Retro new start">
 
 <!-- SECTION: THE SCOPE DECISION -->
-<section class="px-4 md:px-16 py-24 border-t border-white/10 bg-bg2">
+<section class="grid grid-cols-1 md:grid-cols-3 gap-16 px-4 md:px-16 py-24 border-t border-white/10 bg-bg2">
   <div class="max-w-3xl mx-auto">
     <div class="section-label mb-4" data-i18n="scope-label">The Scope Decision</div>
     <h2 class="font-sans font-light text-primary mb-6 text-fluid-h2 tracking-heading" data-i18n="scope-headline">Part of the problem was out of scope. I shipped anyway.</h2>
-    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="scope-p1">The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.</p>
-    <p class="font-sans font-light text-xl text-secondary leading-loose mb-5" data-i18n="scope-p2">The founders aligned quickly — the priority was staying lean and shipping fast. We shipped the validated solution without the full fix.</p>
-    <p class="font-sans font-light text-xl text-secondary leading-loose" data-i18n="scope-p3">The deferred problem was documented, quantified, and advocated for in the next roadmap cycle. It eventually got built — which validated the original judgment call.</p>
+    <p class="font-sans font-light text-lg text-secondary leading-loose mb-5" data-i18n="scope-p1">The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.</p>
+    <p class="font-sans font-light text-lg text-secondary leading-loose mb-5" data-i18n="scope-p2">The founders aligned quickly — the priority was staying lean and shipping fast. We shipped the validated solution without the full fix.</p>
+    <p class="font-sans font-light text-lg text-secondary leading-loose" data-i18n="scope-p3">The deferred problem was documented, quantified, and advocated for in the next roadmap cycle. It eventually got built — which validated the original judgment call.</p>
+  </div>
+  <div class="max-w-3xl mx-auto">
+    <div class="section-label mb-4" data-i18n="scope2-label">The component development</div>
+    <h2 class="font-sans font-light text-primary mb-6 text-fluid-h2 tracking-heading" data-i18n="scope2-headline">Contributing to the long maintenance of our systems</h2>
+    <p class="font-sans font-light text-lg text-secondary leading-loose mb-5" data-i18n="scope2-p1">The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.</p>
+    <img class="flex rounded-xl w-full h-auto md:h-[450px] object-contain md:object-cover" src="assets/img/component_answers.png" alt="Components">
+  </div>
+  <div class="max-w-3xl mx-auto">
+    <div class="section-label mb-4" data-i18n="scope3-label">Constrains</div>
+    <h2 class="font-sans font-light text-primary mb-6 text-fluid-h2 tracking-heading" data-i18n="scope3-headline">The care for accessibility was a primary concearn</h2>
+    <p class="font-sans font-light text-xl==lg text-secondary leading-loose mb-5" data-i18n="scope3-p1">Keyboard navigation was a primary concern. The redesigned sidebar introduced multiple accordions and nested sublevels — a structure that creates non-trivial tab order complexity. Each state (collapsed, expanded, active) was reviewed for focus management, escape key behavior, and ARIA labeling. A user navigating by keyboard needed to experience the same hierarchy as one using a mouse.</p>
   </div>
 </section>
 
@@ -265,7 +277,7 @@
       'approach-p2': 'I merged steps, simplified the survey presentation, and reframed each step around the outcome it produced — not the action it required.',
       'approach-engineering': 'Rather than a traditional design handoff, I worked directly alongside the engineer during implementation — reviewing and iterating on UX and visual decisions in real time. This reduced back-and-forth and kept the final product close to the intended experience.',
       'scope-label': 'The Scope Decision',
-      'scope-headline': 'Part of the problem was out of scope. I shipped anyway.',
+      'scope-headline': 'Part of the problem was out of scope. <br> I shipped anyway.',
       'scope-p1': 'The item selection model was also contributing to confusion — but changing it would have added significant scope and delayed the fix to the core flow. I identified this boundary early and proactively recommended deferring it to the founders.',
       'scope-p2': 'The founders aligned quickly — the priority was staying lean and shipping fast. We shipped the validated solution without the full fix.',
       'scope-p3': 'The deferred problem was documented, quantified, and advocated for in the next roadmap cycle. It eventually got built — which validated the original judgment call.',

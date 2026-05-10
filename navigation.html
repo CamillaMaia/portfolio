@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigation Redesign — Camilla Maia</title>
+  <meta name="description" content="Case study: reframing a sidebar clutter brief into a full IA restructure. Entity-centric navigation that improved activation, reduced confusion, and shipped to production with an A/B test.">
   <link rel="canonical" href="https://camillamaia.site/navigation.html">
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon-bracket-c.svg">
   <link rel="stylesheet" href="assets/css/output.css">
@@ -193,11 +194,17 @@
 
 <!-- WHAT'S STILL OPEN -->
 <section class="px-4 md:px-16 py-16 md:py-24 border-t border-white/10 bg-bg2">
-  <div class="section-label mb-8" data-i18n="open-label">Workspace Settings</div>
+  <div class="section-label mb-8" data-i18n="open-label">Constrains</div>
   <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-16 items-center">
-    <div>
-      <div class="font-sans font-light text-primary mb-4 text-fluid-subhead tracking-heading" data-i18n="stat3-label">Compromise on feature visibility and prioritization of next steps</div>
-      <p class="font-sans text-xl text-secondary font-light leading-relaxed" data-i18n="stat3-description">The workspace settings were found to be harder to find on the new design, given extra clicks needed to reach it. Compromise had to be made favoring constant usage over first setup features. The second iteration surfaced workspace settings contextually, giving it a more button-like visual to make the settings easier to find.</p>
+    <div class="flex flex-col gap-12">
+      <div>
+        <div class="font-sans text-2xl font-light text-primary mb-4 text-fluid-subhead tracking-heading" data-i18n="stat3-label">Compromise on feature visibility and prioritization of next steps</div>
+        <p class="font-sans text-xl text-secondary font-light leading-relaxed" data-i18n="stat3-description">The workspace settings were found to be harder to find on the new design, given extra clicks needed to reach it. Compromise had to be made favoring constant usage over first setup features. The second iteration surfaced workspace settings contextually, giving it a more button-like visual to make the settings easier to find.</p>
+      </div>
+      <div>
+        <div class="font-sans text-2xl font-light text-primary mb-4 text-fluid-subhead tracking-heading" data-i18n="stat4-label">Accessibility Concern</div>
+        <p class="font-sans text-xl text-secondary font-light leading-relaxed mb-4" data-i18n="stat4-description">Every color decision in the navigation — text, icons, active and hover states — was validated against WCAG AAA (7:1 contrast ratio). The dark background treatment was reviewed as a separate pass, since contrast relationships behave differently at low luminance. AA compliance was treated as a floor, not a target. Keyboard navigation was verified to guarantee an accessible experience.</p>
+      </div>
     </div>
     <img class="rounded-xl object-cover w-full" src="assets/img/Redesign_Navegacao_Workshop_0.png" alt="Navigation rollout">
   </div>
@@ -347,9 +354,11 @@
       'handoff-reviews-desc': 'I led dedicated design review sessions to align the implementation with the intended interaction model and quality bar — ensuring the structural decisions survived the handoff intact. UI Review and Mico interaction reviews over multiple iteration round',
       'handoff-template-label': 'Interview template',
       'handoff-template-desc': 'Post-implementation, I created a structured interview template to evaluate navigation changes — now used as a reference for future rollouts across the product.',
-      'open-label': 'Workspace Settings',
+      'open-label': 'Constrains',
       'stat3-label': 'Compromise on feature visibility and prioritization of next steps',
       'stat3-description': 'The workspace settings were found to be harder to find on the new design, given extra clicks needed to reach it. Compromise had to be made favoring constant usage over first setup features. The second iteration surfaced workspace settings contextually, giving it a more button-like visual to make the settings easier to find.',
+      'stat4-label': 'Accessibility Concern',
+      'stat4-description': 'Every color decision in the navigation — text, icons, active and hover states — was validated against WCAG AAA (7:1 contrast ratio). The dark background treatment was reviewed as a separate pass, since contrast relationships behave differently at low luminance. AA compliance was treated as a floor, not a target. Keyboard navigation was verified to guarantee an accessible experience.',
       'next-label': 'Next Case Study',
       'next-title': 'Retrospective Prep Flow',
       'footer-location': 'Münster, Germany',
@@ -414,9 +423,11 @@
       'handoff-reviews-desc': 'Conduzi sessões dedicadas de design review para alinhar a designer responsável pela implementação ao modelo de interação pretendido e ao padrão de qualidade esperado — garantindo que as decisões estruturais sobrevivessem ao handoff.',
       'handoff-template-label': 'Template de entrevista',
       'handoff-template-desc': 'Após a implementação, criei um template estruturado de entrevista para avaliar mudanças de navegação — agora utilizado como referência para futuros rollouts no produto.',
-      'open-label': 'Configurações do workspace',
+      'open-label': 'Fatores Limitantes',
       'stat3-label': 'Comprometer visibilidade e priorização dos próximos passos',
       'stat3-description': 'As configurações do workspace se mostraram mais difíceis de encontrar no novo design, exigindo cliques adicionais. Foi preciso um compromisso, favorecendo o uso recorrente em detrimento das funcionalidades de configuração inicial. A segunda iteração expôs as configurações do workspace de forma contextual, com um visual mais parecido com botão para facilitar o acesso.',
+      'stat4-label': 'Preocupação com Acessibilidade',
+      'stat4-description': 'Cada decisão de cor na navegação — textos, ícones, estados ativos e de hover — foi validada contra os critérios WCAG AAA (proporção mínima de contraste 7:1). O tema escuro foi revisado como uma passagem independente, já que as relações de contraste se comportam de forma diferente em baixa luminância. A conformidade AA foi tratada como piso, não como meta. A navegação por teclado foi verificada para garantir uma experiência acessível.',
       'next-label': 'Próximo Case',
       'next-title': 'Fluxo de Preparação de Retro',
       'footer-location': 'Münster, Alemanha',
